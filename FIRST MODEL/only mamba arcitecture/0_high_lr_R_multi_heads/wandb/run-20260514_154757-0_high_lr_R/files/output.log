@@ -1,0 +1,501 @@
+[15:47:59] 🚀 W&B Initialized. Run ID: 0_high_lr_R
+[15:48:00] 📂 Loading TRAIN Dataset from /scratch200/tallilo/deep_learning_project/data/TRAIN_HOMOLOGY_SPLIT.csv...
+[15:48:20] ✅ CSV Loaded successfully. Raw rows: 42090
+[15:48:20] ✅ Filtered short sequences. Remaining: 42090
+[15:48:20] ✅ Dataset Ready. Total samples: 42090
+[15:48:20] 📂 Loading VAL Dataset from /scratch200/tallilo/deep_learning_project/data/TEST_HOMOLOGY_SPLIT.csv...
+[15:48:22] ✅ CSV Loaded successfully. Raw rows: 5451
+[15:48:22] ✅ Filtered short sequences. Remaining: 5451
+[15:48:22] ✅ Dataset Ready. Total samples: 5451
+[15:48:22] 🔧 Initializing Hyena...
+[15:48:23] ✅ Pre-trained Hyena weights loaded successfully.
+[15:48:23] 🔧 Initializing ProtMamba (Random 'Garbage' Weights)...
+You are using an old version of the checkpointing format that is deprecated (We will also silently ignore `gradient_checkpointing_kwargs` in case you passed it).Please update to the new format on your modeling file. To use the new format, you need to completely remove the definition of the method `_set_gradient_checkpointing` in your model.
+[15:48:25] 🔍 PARAMETER CHECK:
+   - Trainable params: 22,959,962
+   - Total params: 90,671,706
+   - Percentage Trainable: 25.3221%
+/scratch200/tallilo/deep_learning_project/train_55_reproduction.py:532: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(f"{latest_ckpt_path}/training_state.pth", map_location=device)
+[15:48:25] 📉 Resuming EXACTLY from Epoch 7, Step 9750, Batch 2179
+[15:48:25] 🔥 STARTING TRAINING LOOP...
+[15:48:26] ⏩ Fast-forwarding... Skipping batch 0 / 2179
+[15:48:32] ⏩ Fast-forwarding... Skipping batch 100 / 2179
+[15:48:38] ⏩ Fast-forwarding... Skipping batch 200 / 2179
+[15:48:44] ⏩ Fast-forwarding... Skipping batch 300 / 2179
+[15:48:50] ⏩ Fast-forwarding... Skipping batch 400 / 2179
+[15:48:56] ⏩ Fast-forwarding... Skipping batch 500 / 2179
+[15:49:02] ⏩ Fast-forwarding... Skipping batch 600 / 2179
+[15:49:08] ⏩ Fast-forwarding... Skipping batch 700 / 2179
+[15:49:14] ⏩ Fast-forwarding... Skipping batch 800 / 2179
+[15:49:20] ⏩ Fast-forwarding... Skipping batch 900 / 2179
+[15:49:26] ⏩ Fast-forwarding... Skipping batch 1000 / 2179
+[15:49:32] ⏩ Fast-forwarding... Skipping batch 1100 / 2179
+[15:49:38] ⏩ Fast-forwarding... Skipping batch 1200 / 2179
+[15:49:44] ⏩ Fast-forwarding... Skipping batch 1300 / 2179
+[15:49:50] ⏩ Fast-forwarding... Skipping batch 1400 / 2179
+[15:49:56] ⏩ Fast-forwarding... Skipping batch 1500 / 2179
+[15:50:02] ⏩ Fast-forwarding... Skipping batch 1600 / 2179
+[15:50:07] ⏩ Fast-forwarding... Skipping batch 1700 / 2179
+[15:50:13] ⏩ Fast-forwarding... Skipping batch 1800 / 2179
+[15:50:19] ⏩ Fast-forwarding... Skipping batch 1900 / 2179
+[15:50:25] ⏩ Fast-forwarding... Skipping batch 2000 / 2179
+[15:50:31] ⏩ Fast-forwarding... Skipping batch 2100 / 2179
+/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/utils/checkpoint.py:87: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+[15:50:54] Step 9755 | Total: 2.0574 | CDS: 1.9311
+wandb: WARNING Tried to log to step 9755 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:51:08] Step 9760 | Total: 2.0900 | CDS: 1.9442
+wandb: WARNING Tried to log to step 9760 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:51:22] Step 9765 | Total: 2.4451 | CDS: 2.3054
+wandb: WARNING Tried to log to step 9765 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:51:36] Step 9770 | Total: 2.0298 | CDS: 1.8867
+wandb: WARNING Tried to log to step 9770 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:51:50] Step 9775 | Total: 2.1166 | CDS: 1.9711
+wandb: WARNING Tried to log to step 9775 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:52:04] Step 9780 | Total: 2.3121 | CDS: 2.1262
+wandb: WARNING Tried to log to step 9780 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:52:18] Step 9785 | Total: 2.9607 | CDS: 2.8105
+wandb: WARNING Tried to log to step 9785 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:52:32] Step 9790 | Total: 2.1689 | CDS: 2.0417
+wandb: WARNING Tried to log to step 9790 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:52:46] Step 9795 | Total: 2.4529 | CDS: 2.2562
+wandb: WARNING Tried to log to step 9795 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:53:00] Step 9800 | Total: 2.2157 | CDS: 2.0057
+wandb: WARNING Tried to log to step 9800 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:53:14] Step 9805 | Total: 2.0819 | CDS: 1.9481
+wandb: WARNING Tried to log to step 9805 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:53:28] Step 9810 | Total: 2.4198 | CDS: 2.2080
+wandb: WARNING Tried to log to step 9810 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:53:42] Step 9815 | Total: 2.2546 | CDS: 2.0770
+wandb: WARNING Tried to log to step 9815 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:53:56] Step 9820 | Total: 2.0597 | CDS: 1.9071
+wandb: WARNING Tried to log to step 9820 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:54:10] Step 9825 | Total: 2.6137 | CDS: 2.4525
+wandb: WARNING Tried to log to step 9825 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:54:24] Step 9830 | Total: 2.1963 | CDS: 2.0363
+wandb: WARNING Tried to log to step 9830 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:54:38] Step 9835 | Total: 2.5358 | CDS: 2.3902
+wandb: WARNING Tried to log to step 9835 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:54:52] Step 9840 | Total: 2.0410 | CDS: 1.9180
+wandb: WARNING Tried to log to step 9840 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:55:06] Step 9845 | Total: 2.1176 | CDS: 2.0227
+wandb: WARNING Tried to log to step 9845 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:55:20] Step 9850 | Total: 2.3494 | CDS: 2.1792
+wandb: WARNING Tried to log to step 9850 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:55:34] Step 9855 | Total: 2.0322 | CDS: 1.9037
+wandb: WARNING Tried to log to step 9855 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:55:48] Step 9860 | Total: 2.4236 | CDS: 2.2465
+wandb: WARNING Tried to log to step 9860 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:56:02] Step 9865 | Total: 2.0255 | CDS: 1.8705
+wandb: WARNING Tried to log to step 9865 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:56:16] Step 9870 | Total: 2.0601 | CDS: 1.9349
+wandb: WARNING Tried to log to step 9870 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:56:30] Step 9875 | Total: 2.0924 | CDS: 1.9161
+wandb: WARNING Tried to log to step 9875 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:56:44] Step 9880 | Total: 2.1776 | CDS: 2.0454
+wandb: WARNING Tried to log to step 9880 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:56:58] Step 9885 | Total: 2.1481 | CDS: 1.9993
+wandb: WARNING Tried to log to step 9885 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:57:13] Step 9890 | Total: 1.9790 | CDS: 1.8318
+wandb: WARNING Tried to log to step 9890 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:57:27] Step 9895 | Total: 2.0507 | CDS: 1.9251
+wandb: WARNING Tried to log to step 9895 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:57:41] Step 9900 | Total: 3.3471 | CDS: 3.1777
+[15:57:43] 💾 Full checkpoint saved at Epoch 7, Step 9900, Batch 2779
+wandb: WARNING Tried to log to step 9900 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:57:57] Step 9905 | Total: 2.1979 | CDS: 2.0256
+wandb: WARNING Tried to log to step 9905 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:58:11] Step 9910 | Total: 2.0935 | CDS: 1.8927
+wandb: WARNING Tried to log to step 9910 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:58:25] Step 9915 | Total: 2.4638 | CDS: 2.2776
+wandb: WARNING Tried to log to step 9915 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:58:39] Step 9920 | Total: 2.0335 | CDS: 1.9040
+wandb: WARNING Tried to log to step 9920 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:58:53] Step 9925 | Total: 2.8743 | CDS: 2.6780
+wandb: WARNING Tried to log to step 9925 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:59:07] Step 9930 | Total: 2.0906 | CDS: 1.8868
+wandb: WARNING Tried to log to step 9930 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:59:21] Step 9935 | Total: 2.5192 | CDS: 2.3270
+wandb: WARNING Tried to log to step 9935 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:59:35] Step 9940 | Total: 2.6630 | CDS: 2.4358
+wandb: WARNING Tried to log to step 9940 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[15:59:49] Step 9945 | Total: 2.4327 | CDS: 2.3148
+wandb: WARNING Tried to log to step 9945 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:00:03] Step 9950 | Total: 2.0781 | CDS: 1.9497
+wandb: WARNING Tried to log to step 9950 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:00:18] Step 9955 | Total: 2.7043 | CDS: 2.5002
+wandb: WARNING Tried to log to step 9955 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:00:32] Step 9960 | Total: 2.5423 | CDS: 2.3106
+wandb: WARNING Tried to log to step 9960 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:00:46] Step 9965 | Total: 2.1678 | CDS: 2.0364
+wandb: WARNING Tried to log to step 9965 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:01:00] Step 9970 | Total: 2.3985 | CDS: 2.2237
+wandb: WARNING Tried to log to step 9970 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:01:14] Step 9975 | Total: 2.0783 | CDS: 1.9569
+wandb: WARNING Tried to log to step 9975 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:01:28] Step 9980 | Total: 2.4438 | CDS: 2.2508
+wandb: WARNING Tried to log to step 9980 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:01:42] Step 9985 | Total: 2.4569 | CDS: 2.2958
+wandb: WARNING Tried to log to step 9985 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:01:56] Step 9990 | Total: 2.2049 | CDS: 2.0720
+wandb: WARNING Tried to log to step 9990 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:02:10] Step 9995 | Total: 2.0290 | CDS: 1.9087
+wandb: WARNING Tried to log to step 9995 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:02:24] Step 10000 | Total: 2.3153 | CDS: 2.1756
+wandb: WARNING Tried to log to step 10000 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:02:39] Step 10005 | Total: 2.2069 | CDS: 2.0019
+wandb: WARNING Tried to log to step 10005 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:02:53] Step 10010 | Total: 2.1554 | CDS: 1.9625
+wandb: WARNING Tried to log to step 10010 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:03:07] Step 10015 | Total: 2.1550 | CDS: 2.0019
+wandb: WARNING Tried to log to step 10015 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:03:21] Step 10020 | Total: 2.0956 | CDS: 1.9313
+wandb: WARNING Tried to log to step 10020 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:03:35] Step 10025 | Total: 2.3998 | CDS: 2.2294
+wandb: WARNING Tried to log to step 10025 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:03:49] Step 10030 | Total: 2.2936 | CDS: 2.1136
+wandb: WARNING Tried to log to step 10030 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:04:03] Step 10035 | Total: 2.6091 | CDS: 2.4445
+wandb: WARNING Tried to log to step 10035 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:04:17] Step 10040 | Total: 2.1820 | CDS: 2.0430
+wandb: WARNING Tried to log to step 10040 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:04:31] Step 10045 | Total: 2.1342 | CDS: 1.9563
+wandb: WARNING Tried to log to step 10045 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:04:46] Step 10050 | Total: 2.7807 | CDS: 2.5977
+[16:04:48] 💾 Full checkpoint saved at Epoch 7, Step 10050, Batch 3379
+wandb: WARNING Tried to log to step 10050 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:05:02] Step 10055 | Total: 2.3977 | CDS: 2.2824
+wandb: WARNING Tried to log to step 10055 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:05:16] Step 10060 | Total: 2.5724 | CDS: 2.3290
+wandb: WARNING Tried to log to step 10060 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:05:30] Step 10065 | Total: 2.3494 | CDS: 2.2034
+wandb: WARNING Tried to log to step 10065 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:05:44] Step 10070 | Total: 2.2699 | CDS: 2.1221
+wandb: WARNING Tried to log to step 10070 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:05:59] Step 10075 | Total: 2.1953 | CDS: 1.9530
+wandb: WARNING Tried to log to step 10075 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:06:13] Step 10080 | Total: 2.0215 | CDS: 1.8656
+wandb: WARNING Tried to log to step 10080 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:06:27] Step 10085 | Total: 2.0339 | CDS: 1.8841
+wandb: WARNING Tried to log to step 10085 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:06:41] Step 10090 | Total: 2.2036 | CDS: 2.0127
+wandb: WARNING Tried to log to step 10090 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:06:55] Step 10095 | Total: 2.1812 | CDS: 2.0659
+wandb: WARNING Tried to log to step 10095 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:07:09] Step 10100 | Total: 2.0798 | CDS: 1.9328
+wandb: WARNING Tried to log to step 10100 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:07:23] Step 10105 | Total: 2.1162 | CDS: 1.9496
+wandb: WARNING Tried to log to step 10105 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:07:37] Step 10110 | Total: 2.3778 | CDS: 2.2406
+wandb: WARNING Tried to log to step 10110 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:07:51] Step 10115 | Total: 2.0446 | CDS: 1.8893
+wandb: WARNING Tried to log to step 10115 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:08:05] Step 10120 | Total: 2.1862 | CDS: 2.0142
+wandb: WARNING Tried to log to step 10120 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:08:20] Step 10125 | Total: 2.1473 | CDS: 2.0158
+wandb: WARNING Tried to log to step 10125 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:08:34] Step 10130 | Total: 2.2012 | CDS: 2.0487
+wandb: WARNING Tried to log to step 10130 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:08:48] Step 10135 | Total: 2.4587 | CDS: 2.3339
+wandb: WARNING Tried to log to step 10135 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:09:02] Step 10140 | Total: 2.1114 | CDS: 1.9704
+wandb: WARNING Tried to log to step 10140 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:09:16] Step 10145 | Total: 2.3318 | CDS: 2.1534
+wandb: WARNING Tried to log to step 10145 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:09:30] Step 10150 | Total: 2.3488 | CDS: 2.2064
+wandb: WARNING Tried to log to step 10150 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:09:44] Step 10155 | Total: 2.7281 | CDS: 2.5414
+wandb: WARNING Tried to log to step 10155 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:09:58] Step 10160 | Total: 2.4697 | CDS: 2.3151
+wandb: WARNING Tried to log to step 10160 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:10:12] Step 10165 | Total: 3.1312 | CDS: 2.9134
+wandb: WARNING Tried to log to step 10165 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:10:26] Step 10170 | Total: 2.2028 | CDS: 2.0296
+wandb: WARNING Tried to log to step 10170 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:10:41] Step 10175 | Total: 2.2816 | CDS: 2.1181
+wandb: WARNING Tried to log to step 10175 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:10:55] Step 10180 | Total: 2.1817 | CDS: 2.0475
+wandb: WARNING Tried to log to step 10180 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:11:09] Step 10185 | Total: 2.7842 | CDS: 2.5185
+wandb: WARNING Tried to log to step 10185 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:11:23] Step 10190 | Total: 2.4501 | CDS: 2.2748
+wandb: WARNING Tried to log to step 10190 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:11:37] Step 10195 | Total: 2.3311 | CDS: 2.1086
+wandb: WARNING Tried to log to step 10195 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:11:51] Step 10200 | Total: 2.1150 | CDS: 1.9638
+[16:11:53] 💾 Full checkpoint saved at Epoch 7, Step 10200, Batch 3979
+wandb: WARNING Tried to log to step 10200 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:12:08] Step 10205 | Total: 1.9750 | CDS: 1.8586
+wandb: WARNING Tried to log to step 10205 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:12:22] Step 10210 | Total: 2.6824 | CDS: 2.4990
+wandb: WARNING Tried to log to step 10210 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:12:36] Step 10215 | Total: 2.7024 | CDS: 2.4965
+wandb: WARNING Tried to log to step 10215 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:12:50] Step 10220 | Total: 2.0249 | CDS: 1.8384
+wandb: WARNING Tried to log to step 10220 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:13:04] Step 10225 | Total: 2.1404 | CDS: 1.9741
+wandb: WARNING Tried to log to step 10225 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:13:18] Step 10230 | Total: 2.5901 | CDS: 2.4431
+wandb: WARNING Tried to log to step 10230 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:13:32] Step 10235 | Total: 2.3279 | CDS: 2.1807
+wandb: WARNING Tried to log to step 10235 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:13:46] Step 10240 | Total: 2.0920 | CDS: 1.9589
+wandb: WARNING Tried to log to step 10240 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:14:00] Step 10245 | Total: 2.0721 | CDS: 1.9135
+wandb: WARNING Tried to log to step 10245 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:14:15] Step 10250 | Total: 2.4998 | CDS: 2.2930
+wandb: WARNING Tried to log to step 10250 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:14:29] Step 10255 | Total: 2.2387 | CDS: 2.0308
+wandb: WARNING Tried to log to step 10255 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:14:43] Step 10260 | Total: 2.2218 | CDS: 2.0743
+wandb: WARNING Tried to log to step 10260 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:14:57] Step 10265 | Total: 2.0612 | CDS: 1.8888
+wandb: WARNING Tried to log to step 10265 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:15:11] Step 10270 | Total: 2.6512 | CDS: 2.4049
+wandb: WARNING Tried to log to step 10270 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:15:25] Step 10275 | Total: 2.1073 | CDS: 1.9505
+wandb: WARNING Tried to log to step 10275 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:15:39] Step 10280 | Total: 2.1044 | CDS: 1.9419
+wandb: WARNING Tried to log to step 10280 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:15:53] Step 10285 | Total: 2.3679 | CDS: 2.2384
+wandb: WARNING Tried to log to step 10285 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:16:07] Step 10290 | Total: 2.1870 | CDS: 2.0338
+wandb: WARNING Tried to log to step 10290 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:16:22] Step 10295 | Total: 2.3637 | CDS: 2.1586
+wandb: WARNING Tried to log to step 10295 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:16:36] Step 10300 | Total: 2.2020 | CDS: 2.0040
+wandb: WARNING Tried to log to step 10300 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:16:50] Step 10305 | Total: 2.2502 | CDS: 2.0743
+wandb: WARNING Tried to log to step 10305 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:17:04] Step 10310 | Total: 2.0347 | CDS: 1.8905
+wandb: WARNING Tried to log to step 10310 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:17:18] Step 10315 | Total: 2.3838 | CDS: 2.1641
+wandb: WARNING Tried to log to step 10315 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:17:32] Step 10320 | Total: 2.6045 | CDS: 2.4198
+wandb: WARNING Tried to log to step 10320 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:17:46] Step 10325 | Total: 2.1269 | CDS: 1.8960
+wandb: WARNING Tried to log to step 10325 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:18:00] Step 10330 | Total: 2.1128 | CDS: 1.9822
+wandb: WARNING Tried to log to step 10330 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:18:14] Step 10335 | Total: 2.2821 | CDS: 2.1562
+wandb: WARNING Tried to log to step 10335 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:18:28] Step 10340 | Total: 2.3157 | CDS: 2.1647
+wandb: WARNING Tried to log to step 10340 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:18:42] Step 10345 | Total: 2.4785 | CDS: 2.3005
+wandb: WARNING Tried to log to step 10345 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:18:57] Step 10350 | Total: 2.0821 | CDS: 1.9386
+[16:18:59] 💾 Full checkpoint saved at Epoch 7, Step 10350, Batch 4579
+wandb: WARNING Tried to log to step 10350 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:19:13] Step 10355 | Total: 2.0144 | CDS: 1.8742
+wandb: WARNING Tried to log to step 10355 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:19:27] Step 10360 | Total: 2.3561 | CDS: 2.2125
+wandb: WARNING Tried to log to step 10360 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:19:41] Step 10365 | Total: 2.3724 | CDS: 2.2098
+wandb: WARNING Tried to log to step 10365 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:19:56] Step 10370 | Total: 2.0180 | CDS: 1.8947
+wandb: WARNING Tried to log to step 10370 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:20:10] Step 10375 | Total: 3.0399 | CDS: 2.7789
+wandb: WARNING Tried to log to step 10375 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:20:24] Step 10380 | Total: 2.1180 | CDS: 1.9311
+wandb: WARNING Tried to log to step 10380 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:20:38] Step 10385 | Total: 2.5807 | CDS: 2.3985
+wandb: WARNING Tried to log to step 10385 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:20:52] Step 10390 | Total: 2.0359 | CDS: 1.8414
+wandb: WARNING Tried to log to step 10390 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:21:06] Step 10395 | Total: 2.0262 | CDS: 1.9180
+wandb: WARNING Tried to log to step 10395 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:21:20] Step 10400 | Total: 2.3496 | CDS: 2.1623
+wandb: WARNING Tried to log to step 10400 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:21:34] Step 10405 | Total: 2.7762 | CDS: 2.6022
+wandb: WARNING Tried to log to step 10405 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:21:48] Step 10410 | Total: 2.5812 | CDS: 2.4454
+wandb: WARNING Tried to log to step 10410 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:22:02] Step 10415 | Total: 2.1840 | CDS: 2.0422
+wandb: WARNING Tried to log to step 10415 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:22:17] Step 10420 | Total: 2.0439 | CDS: 1.8702
+wandb: WARNING Tried to log to step 10420 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:22:31] Step 10425 | Total: 2.7489 | CDS: 2.5756
+wandb: WARNING Tried to log to step 10425 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:22:45] Step 10430 | Total: 2.5466 | CDS: 2.3565
+wandb: WARNING Tried to log to step 10430 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:22:59] Step 10435 | Total: 2.2198 | CDS: 2.0223
+wandb: WARNING Tried to log to step 10435 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:23:13] Step 10440 | Total: 2.1251 | CDS: 1.9350
+wandb: WARNING Tried to log to step 10440 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:23:27] Step 10445 | Total: 2.3676 | CDS: 2.1565
+wandb: WARNING Tried to log to step 10445 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:23:41] Step 10450 | Total: 2.5215 | CDS: 2.3343
+wandb: WARNING Tried to log to step 10450 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:23:55] Step 10455 | Total: 2.1731 | CDS: 2.0517
+wandb: WARNING Tried to log to step 10455 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:24:09] Step 10460 | Total: 2.3653 | CDS: 2.2371
+wandb: WARNING Tried to log to step 10460 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:24:23] Step 10465 | Total: 2.0311 | CDS: 1.8847
+wandb: WARNING Tried to log to step 10465 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:24:38] Step 10470 | Total: 2.4658 | CDS: 2.2487
+wandb: WARNING Tried to log to step 10470 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:24:52] Step 10475 | Total: 2.9727 | CDS: 2.8135
+wandb: WARNING Tried to log to step 10475 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:25:06] Step 10480 | Total: 2.3574 | CDS: 2.2104
+wandb: WARNING Tried to log to step 10480 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:25:20] Step 10485 | Total: 2.6343 | CDS: 2.4904
+wandb: WARNING Tried to log to step 10485 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:25:34] Step 10490 | Total: 2.3382 | CDS: 2.2305
+wandb: WARNING Tried to log to step 10490 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:25:48] Step 10495 | Total: 2.0496 | CDS: 1.8940
+wandb: WARNING Tried to log to step 10495 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:26:02] Step 10500 | Total: 2.3652 | CDS: 2.1121
+[16:26:04] 💾 Full checkpoint saved at Epoch 7, Step 10500, Batch 5179
+wandb: WARNING Tried to log to step 10500 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:26:18] Step 10505 | Total: 2.4237 | CDS: 2.2342
+wandb: WARNING Tried to log to step 10505 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:26:32] Step 10510 | Total: 2.0664 | CDS: 1.9535
+wandb: WARNING Tried to log to step 10510 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:26:47] Step 10515 | Total: 2.1839 | CDS: 1.9869
+wandb: WARNING Tried to log to step 10515 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:27:01] Step 10520 | Total: 2.1196 | CDS: 2.0056
+wandb: WARNING Tried to log to step 10520 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:34:54] 📊 Epoch 8 Val: Loss 1.3101
+[16:34:56] 💾 Full checkpoint saved at Epoch 8, Step 10520, Batch -1
+[16:34:58] 💾 Full checkpoint saved at Epoch 8, Step 10520, Batch -1
+[16:35:13] Step 10525 | Total: 2.0765 | CDS: 1.9720
+wandb: WARNING Tried to log to step 10525 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:35:27] Step 10530 | Total: 2.0616 | CDS: 1.9398
+wandb: WARNING Tried to log to step 10530 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:35:41] Step 10535 | Total: 2.0818 | CDS: 1.9334
+wandb: WARNING Tried to log to step 10535 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:35:55] Step 10540 | Total: 2.3075 | CDS: 2.0907
+wandb: WARNING Tried to log to step 10540 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:36:09] Step 10545 | Total: 2.3735 | CDS: 2.1882
+wandb: WARNING Tried to log to step 10545 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:36:23] Step 10550 | Total: 2.0974 | CDS: 1.9398
+wandb: WARNING Tried to log to step 10550 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:36:37] Step 10555 | Total: 2.1320 | CDS: 1.9321
+wandb: WARNING Tried to log to step 10555 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:36:52] Step 10560 | Total: 2.4233 | CDS: 2.2855
+wandb: WARNING Tried to log to step 10560 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:37:06] Step 10565 | Total: 2.1456 | CDS: 2.0118
+wandb: WARNING Tried to log to step 10565 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:37:20] Step 10570 | Total: 2.6337 | CDS: 2.4887
+wandb: WARNING Tried to log to step 10570 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:37:34] Step 10575 | Total: 2.0401 | CDS: 1.9020
+wandb: WARNING Tried to log to step 10575 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:37:48] Step 10580 | Total: 2.1785 | CDS: 1.9715
+wandb: WARNING Tried to log to step 10580 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:38:02] Step 10585 | Total: 2.1586 | CDS: 2.0005
+wandb: WARNING Tried to log to step 10585 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:38:16] Step 10590 | Total: 1.9771 | CDS: 1.8640
+wandb: WARNING Tried to log to step 10590 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:38:30] Step 10595 | Total: 2.4685 | CDS: 2.2677
+wandb: WARNING Tried to log to step 10595 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:38:44] Step 10600 | Total: 2.0358 | CDS: 1.8997
+wandb: WARNING Tried to log to step 10600 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:38:58] Step 10605 | Total: 3.0326 | CDS: 2.7381
+wandb: WARNING Tried to log to step 10605 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:39:12] Step 10610 | Total: 2.4545 | CDS: 2.3185
+wandb: WARNING Tried to log to step 10610 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:39:26] Step 10615 | Total: 2.3997 | CDS: 2.2489
+wandb: WARNING Tried to log to step 10615 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:39:40] Step 10620 | Total: 2.3009 | CDS: 2.1258
+wandb: WARNING Tried to log to step 10620 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:39:54] Step 10625 | Total: 2.7819 | CDS: 2.6045
+wandb: WARNING Tried to log to step 10625 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:40:08] Step 10630 | Total: 2.3733 | CDS: 2.2096
+wandb: WARNING Tried to log to step 10630 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:40:22] Step 10635 | Total: 2.1665 | CDS: 2.0110
+wandb: WARNING Tried to log to step 10635 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:40:36] Step 10640 | Total: 2.1582 | CDS: 1.9877
+wandb: WARNING Tried to log to step 10640 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:40:50] Step 10645 | Total: 2.0288 | CDS: 1.8702
+wandb: WARNING Tried to log to step 10645 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:41:04] Step 10650 | Total: 2.1195 | CDS: 1.9615
+[16:41:06] 💾 Full checkpoint saved at Epoch 8, Step 10650, Batch 519
+wandb: WARNING Tried to log to step 10650 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:41:20] Step 10655 | Total: 2.7219 | CDS: 2.5557
+wandb: WARNING Tried to log to step 10655 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:41:34] Step 10660 | Total: 2.4555 | CDS: 2.2949
+wandb: WARNING Tried to log to step 10660 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:41:48] Step 10665 | Total: 1.9857 | CDS: 1.8491
+wandb: WARNING Tried to log to step 10665 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:42:02] Step 10670 | Total: 2.1449 | CDS: 1.9997
+wandb: WARNING Tried to log to step 10670 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:42:16] Step 10675 | Total: 2.1394 | CDS: 2.0306
+wandb: WARNING Tried to log to step 10675 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:42:30] Step 10680 | Total: 1.9779 | CDS: 1.8794
+wandb: WARNING Tried to log to step 10680 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:42:44] Step 10685 | Total: 2.8312 | CDS: 2.6899
+wandb: WARNING Tried to log to step 10685 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:42:58] Step 10690 | Total: 2.6665 | CDS: 2.5009
+wandb: WARNING Tried to log to step 10690 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:43:12] Step 10695 | Total: 2.1570 | CDS: 2.0295
+wandb: WARNING Tried to log to step 10695 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:43:26] Step 10700 | Total: 2.6526 | CDS: 2.4965
+wandb: WARNING Tried to log to step 10700 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:43:40] Step 10705 | Total: 2.0246 | CDS: 1.8653
+wandb: WARNING Tried to log to step 10705 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:43:54] Step 10710 | Total: 3.2529 | CDS: 3.0797
+wandb: WARNING Tried to log to step 10710 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:44:08] Step 10715 | Total: 2.2445 | CDS: 2.0680
+wandb: WARNING Tried to log to step 10715 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:44:22] Step 10720 | Total: 2.0430 | CDS: 1.9107
+wandb: WARNING Tried to log to step 10720 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:44:36] Step 10725 | Total: 2.4439 | CDS: 2.2318
+wandb: WARNING Tried to log to step 10725 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:44:50] Step 10730 | Total: 2.6742 | CDS: 2.4387
+wandb: WARNING Tried to log to step 10730 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:45:04] Step 10735 | Total: 2.5395 | CDS: 2.3506
+wandb: WARNING Tried to log to step 10735 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:45:18] Step 10740 | Total: 2.3037 | CDS: 2.1692
+wandb: WARNING Tried to log to step 10740 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:45:32] Step 10745 | Total: 2.5983 | CDS: 2.3900
+wandb: WARNING Tried to log to step 10745 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:45:47] Step 10750 | Total: 2.7090 | CDS: 2.5272
+wandb: WARNING Tried to log to step 10750 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:46:01] Step 10755 | Total: 2.2525 | CDS: 2.1296
+wandb: WARNING Tried to log to step 10755 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:46:15] Step 10760 | Total: 2.0422 | CDS: 1.8777
+wandb: WARNING Tried to log to step 10760 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:46:29] Step 10765 | Total: 2.6282 | CDS: 2.3898
+wandb: WARNING Tried to log to step 10765 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:46:43] Step 10770 | Total: 2.1937 | CDS: 2.0458
+wandb: WARNING Tried to log to step 10770 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:46:57] Step 10775 | Total: 2.6997 | CDS: 2.5812
+wandb: WARNING Tried to log to step 10775 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:47:11] Step 10780 | Total: 2.6550 | CDS: 2.4664
+wandb: WARNING Tried to log to step 10780 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:47:25] Step 10785 | Total: 2.2894 | CDS: 2.0996
+wandb: WARNING Tried to log to step 10785 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:47:39] Step 10790 | Total: 2.7484 | CDS: 2.5576
+wandb: WARNING Tried to log to step 10790 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:47:53] Step 10795 | Total: 2.1822 | CDS: 2.0526
+wandb: WARNING Tried to log to step 10795 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:48:07] Step 10800 | Total: 1.9824 | CDS: 1.8707
+wandb: WARNING Tried to log to step 10800 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:48:10] 💾 Full checkpoint saved at Epoch 8, Step 10800, Batch 1119
+[16:48:24] Step 10805 | Total: 2.1234 | CDS: 1.9207
+wandb: WARNING Tried to log to step 10805 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:48:38] Step 10810 | Total: 2.3814 | CDS: 2.2668
+wandb: WARNING Tried to log to step 10810 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:48:52] Step 10815 | Total: 2.7696 | CDS: 2.5393
+wandb: WARNING Tried to log to step 10815 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:49:06] Step 10820 | Total: 2.7896 | CDS: 2.5580
+wandb: WARNING Tried to log to step 10820 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:49:20] Step 10825 | Total: 2.3566 | CDS: 2.2185
+wandb: WARNING Tried to log to step 10825 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:49:34] Step 10830 | Total: 2.0390 | CDS: 1.8999
+wandb: WARNING Tried to log to step 10830 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:49:48] Step 10835 | Total: 2.1513 | CDS: 2.0004
+wandb: WARNING Tried to log to step 10835 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:50:02] Step 10840 | Total: 2.6419 | CDS: 2.4572
+wandb: WARNING Tried to log to step 10840 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:50:17] Step 10845 | Total: 2.1319 | CDS: 1.9629
+wandb: WARNING Tried to log to step 10845 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:50:31] Step 10850 | Total: 2.4964 | CDS: 2.2703
+wandb: WARNING Tried to log to step 10850 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:50:45] Step 10855 | Total: 2.5651 | CDS: 2.3511
+wandb: WARNING Tried to log to step 10855 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:50:59] Step 10860 | Total: 2.1682 | CDS: 2.0269
+wandb: WARNING Tried to log to step 10860 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[16:51:13] Step 10865 | Total: 2.0584 | CDS: 1.9332
+wandb: WARNING Tried to log to step 10865 that is less than the current step 18351. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.

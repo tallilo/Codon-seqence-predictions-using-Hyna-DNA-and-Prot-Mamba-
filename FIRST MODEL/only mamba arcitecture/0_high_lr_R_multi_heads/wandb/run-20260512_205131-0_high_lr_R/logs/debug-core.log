@@ -1,0 +1,19 @@
+{"time":"2026-05-12T20:51:32.869162657+03:00","level":"INFO","msg":"main: starting server","port-filename":"/scratch200/tallilo/my_cluster_caches/tmp/tmpuj_pxo6c/port-2242438.txt","pid":2242438,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-05-12T20:51:32.878946459+03:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":2242438}
+{"time":"2026-05-12T20:51:32.878924099+03:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/scratch200/tallilo/my_cluster_caches/tmp/wandb-2242438-2242484-105385001/socket","Net":"unix"}}
+{"time":"2026-05-12T20:51:33.040902201+03:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-05-12T20:51:33.052706789+03:00","level":"INFO","msg":"handleInformInit: received","streamId":"0_high_lr_R","id":"1(@)"}
+{"time":"2026-05-12T20:51:33.607440317+03:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"0_high_lr_R","id":"1(@)"}
+{"time":"2026-05-12T20:51:40.384735663+03:00","level":"INFO","msg":"connection: cancelling request","id":"1(@)","requestId":"owncky14w7zq"}
+{"time":"2026-05-12T21:10:46.595953671+03:00","level":"INFO","msg":"connection: cancelling request","id":"1(@)","requestId":"owncky14w7zq"}
+{"time":"2026-05-12T21:10:48.564902872+03:00","level":"INFO","msg":"connection: cancelling request","id":"1(@)","requestId":"owncky14w7zq"}
+{"time":"2026-05-12T21:10:48.612819849+03:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"0_high_lr_R","id":"1(@)"}
+{"time":"2026-05-12T21:10:48.647968825+03:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"0_high_lr_R","id":"1(@)"}
+{"time":"2026-05-12T21:10:48.979858227+03:00","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"1(@)"}
+{"time":"2026-05-12T21:10:48.979897007+03:00","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"1(@)"}
+{"time":"2026-05-12T21:10:48.979908127+03:00","level":"INFO","msg":"server is shutting down"}
+{"time":"2026-05-12T21:10:48.979911697+03:00","level":"INFO","msg":"connection: closing","id":"1(@)"}
+{"time":"2026-05-12T21:10:48.979994087+03:00","level":"INFO","msg":"connection: closed successfully","id":"1(@)"}
+{"time":"2026-05-12T21:10:48.980000757+03:00","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"1(@)"}
+{"time":"2026-05-12T21:10:49.27791798+03:00","level":"INFO","msg":"server: listener closed","addr":{"Name":"/scratch200/tallilo/my_cluster_caches/tmp/wandb-2242438-2242484-105385001/socket","Net":"unix"}}
+{"time":"2026-05-12T21:10:49.27797484+03:00","level":"INFO","msg":"server is closed"}

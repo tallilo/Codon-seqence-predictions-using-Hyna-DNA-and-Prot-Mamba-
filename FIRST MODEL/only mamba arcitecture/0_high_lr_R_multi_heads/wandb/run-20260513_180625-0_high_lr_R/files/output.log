@@ -1,0 +1,16 @@
+[18:06:31] 🚀 W&B Initialized. Run ID: 0_high_lr_R
+[18:06:31] 📂 Loading TRAIN Dataset from /scratch200/tallilo/deep_learning_project/data/TRAIN_HOMOLOGY_SPLIT.csv...
+[18:06:50] ✅ CSV Loaded successfully. Raw rows: 42090
+[18:06:50] ✅ Filtered short sequences. Remaining: 42090
+[18:06:50] ✅ Dataset Ready. Total samples: 42090
+[18:06:50] 📂 Loading VAL Dataset from /scratch200/tallilo/deep_learning_project/data/TEST_HOMOLOGY_SPLIT.csv...
+[18:06:53] ✅ CSV Loaded successfully. Raw rows: 5451
+[18:06:53] ✅ Filtered short sequences. Remaining: 5451
+[18:06:53] ✅ Dataset Ready. Total samples: 5451
+[18:06:53] 🔧 Initializing Hyena...
+[18:06:54] ✅ Pre-trained Hyena weights loaded successfully.
+[18:06:54] 🔧 Initializing ProtMamba (Random 'Garbage' Weights)...
+You are using an old version of the checkpointing format that is deprecated (We will also silently ignore `gradient_checkpointing_kwargs` in case you passed it).Please update to the new format on your modeling file. To use the new format, you need to completely remove the definition of the method `_set_gradient_checkpointing` in your model.
+/scratch200/tallilo/deep_learning_project/train_55_reproduction.py:494: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(f"{latest_ckpt_path}/training_state.pth", map_location=device)
+[18:06:55] ❌ ERROR loading checkpoint: loaded state dict contains a parameter group that doesn't match the size of optimizer's group

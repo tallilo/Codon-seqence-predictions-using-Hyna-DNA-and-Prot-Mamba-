@@ -1,0 +1,31 @@
+{
+    "experiment_id": "prot_mamba_pre_trained_32_r",
+    "lr": 0.0004,
+    "optimizer": "adamw",
+    "weight_decay": 0.05,
+    "warmup_steps": 500,
+    "mask_prob": 0.15,
+    "span_length": 3,
+    "dropout": 0.1,
+    "l_org_weight": 0.1,
+    "l_pa_weight": 0.1,
+    "lora_dropout": 0.1,
+    "use_rslora": false,
+    "lora_r": 32,
+    "lora_alpha": 128,
+    "batch_size": 8,
+    "grad_accum": 4,
+    "epochs": 40,
+    "target_modules": [
+        "query",
+        "key",
+        "value",
+        "dense",
+        "fc1",
+        "fc2",
+        "in_proj",
+        "x_proj",
+        "dt_proj",
+        "out_proj"
+    ]
+}

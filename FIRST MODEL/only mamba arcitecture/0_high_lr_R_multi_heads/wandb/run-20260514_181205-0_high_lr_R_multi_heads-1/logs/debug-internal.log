@@ -1,0 +1,7 @@
+{"time":"2026-05-14T18:12:05.936420779+03:00","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-05-14T18:12:06.474079824+03:00","level":"INFO","msg":"stream: created new stream","id":"0_high_lr_R_multi_heads"}
+{"time":"2026-05-14T18:12:06.475891188+03:00","level":"INFO","msg":"handler: started","stream_id":"0_high_lr_R_multi_heads"}
+{"time":"2026-05-14T18:12:06.477815541+03:00","level":"INFO","msg":"stream: started","id":"0_high_lr_R_multi_heads"}
+{"time":"2026-05-14T18:12:06.477839661+03:00","level":"INFO","msg":"writer: started","stream_id":"0_high_lr_R_multi_heads"}
+{"time":"2026-05-14T18:12:06.477869881+03:00","level":"INFO","msg":"sender: started","stream_id":"0_high_lr_R_multi_heads"}
+{"time":"2026-05-15T00:43:22.284652812+03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/tallilo5011323-tel-aviv-university/Deep_Genomic_Fusion/0_high_lr_R_multi_heads/file_stream\": dial tcp: lookup api.wandb.ai on [::1]:53: read udp [::1]:44733->[::1]:53: read: connection refused"}

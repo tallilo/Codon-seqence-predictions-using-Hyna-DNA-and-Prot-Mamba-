@@ -1,0 +1,147 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            aujdc3tcpw4lprggjcce3blvrvtqc945:
+                args:
+                    - --config
+                    - configs/config_0_R.json
+                codePath: train_55_reproduction.py
+                codePathLocal: train_55_reproduction.py
+                cpu_count: 64
+                cpu_count_logical: 64
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "804973940736"
+                        used: "30242205696"
+                email: tallilo5011323@gmail.com
+                executable: /scratch200/tallilo/conda_envs/dna_env/bin/python
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-62d1365b-5956-28af-100f-7f8016c3c31d
+                host: compute-0-283.powerslurm
+                memory:
+                    total: "540282335232"
+                os: Linux-5.14.0-570.58.1.el9_6.x86_64-x86_64-with-glibc2.34
+                program: /scratch200/tallilo/deep_learning_project/train_55_reproduction.py
+                python: CPython 3.10.19
+                root: /scratch200/tallilo/deep_learning_project/runs/0_high_lr_R
+                slurm:
+                    cluster_name: skynet
+                    conf: /var/spool/slurmd/conf-cache/slurm.conf
+                    cpus_on_node: "4"
+                    cpus_per_task: "4"
+                    gpus_on_node: "1"
+                    gtids: "0"
+                    job_account: tamirtul-users_v2
+                    job_cpus_per_node: "4"
+                    job_end_time: "1778684355"
+                    job_gid: "1199"
+                    job_gpus: "1"
+                    job_id: "14503589"
+                    job_name: Fusion_Exp0
+                    job_nodelist: compute-0-283
+                    job_num_nodes: "1"
+                    job_partition: gpu-general-pool
+                    job_qos: public
+                    job_start_time: "1778641155"
+                    job_uid: "989068"
+                    job_user: tallilo
+                    jobid: "14503589"
+                    localid: "0"
+                    mem_per_node: "32768"
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: compute-0-283
+                    nprocs: "1"
+                    ntasks: "1"
+                    oom_kill_step: "0"
+                    prio_process: "0"
+                    procid: "0"
+                    submit_dir: /scratch200/tallilo/deep_learning_project
+                    submit_host: powerslurm-login
+                    task_pid: "2538444"
+                    tasks_per_node: "1"
+                    topology_addr: compute-0-283
+                    topology_addr_pattern: node
+                    tres_per_task: cpu=4
+                startedAt: "2026-05-13T02:59:31.016023Z"
+                writerId: aujdc3tcpw4lprggjcce3blvrvtqc945
+        m: []
+        python_version: 3.10.19
+        t:
+            "1":
+                - 1
+                - 11
+                - 49
+                - 71
+                - 98
+            "2":
+                - 1
+                - 11
+                - 49
+                - 71
+                - 98
+            "3":
+                - 5
+                - 13
+                - 14
+                - 16
+                - 62
+            "4": 3.10.19
+            "5": 0.25.0
+            "6": 4.39.3
+            "12": 0.25.0
+            "13": linux-x86_64
+batch_size:
+    value: 8
+dropout:
+    value: 0.1
+epochs:
+    value: 20
+experiment_id:
+    value: 0_high_lr_R
+grad_accum:
+    value: 4
+l_org_weight:
+    value: 0.1
+l_pa_weight:
+    value: 0.1
+lora_alpha:
+    value: 128
+lora_dropout:
+    value: 0.1
+lora_r:
+    value: 64
+lr:
+    value: 0.0005
+mask_prob:
+    value: 0.15
+optimizer:
+    value: adamw
+span_length:
+    value: 3
+target_modules:
+    value:
+        - query
+        - key
+        - value
+        - dense
+        - fc1
+        - fc2
+        - in_proj
+        - x_proj
+        - dt_proj
+        - out_proj
+use_rslora:
+    value: false
+warmup_steps:
+    value: 500
+weight_decay:
+    value: 0.05

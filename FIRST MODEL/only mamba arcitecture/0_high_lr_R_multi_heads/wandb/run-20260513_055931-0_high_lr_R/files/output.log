@@ -1,0 +1,127 @@
+[05:59:34] 🚀 W&B Initialized. Run ID: 0_high_lr_R
+[05:59:35] 📂 Loading TRAIN Dataset from /scratch200/tallilo/deep_learning_project/data/TRAIN_HOMOLOGY_SPLIT.csv...
+[05:59:54] ✅ CSV Loaded successfully. Raw rows: 42090
+[05:59:54] ✅ Filtered short sequences. Remaining: 42090
+[05:59:54] ✅ Dataset Ready. Total samples: 42090
+[05:59:54] 📂 Loading VAL Dataset from /scratch200/tallilo/deep_learning_project/data/TEST_HOMOLOGY_SPLIT.csv...
+[05:59:57] ✅ CSV Loaded successfully. Raw rows: 5451
+[05:59:57] ✅ Filtered short sequences. Remaining: 5451
+[05:59:57] ✅ Dataset Ready. Total samples: 5451
+[05:59:57] 🔧 Initializing Hyena...
+[05:59:57] ✅ Pre-trained Hyena weights loaded successfully.
+[05:59:57] 🔧 Initializing ProtMamba (Random 'Garbage' Weights)...
+You are using an old version of the checkpointing format that is deprecated (We will also silently ignore `gradient_checkpointing_kwargs` in case you passed it).Please update to the new format on your modeling file. To use the new format, you need to completely remove the definition of the method `_set_gradient_checkpointing` in your model.
+/scratch200/tallilo/deep_learning_project/train_55_reproduction.py:486: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(f"{latest_ckpt_path}/training_state.pth", map_location=device)
+[06:00:09] ✅ Successfully Resumed! Starting from Epoch 5, Step 6575, skipping up to Batch -1
+[06:00:09] 🔥 STARTING TRAINING LOOP...
+/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/utils/checkpoint.py:87: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+Traceback (most recent call last):
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 622, in <module>
+    if __name__ == "__main__": main()
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 529, in main
+    p_org, p_pa, p_cds = model(b['up'], b['down'], b['introns'], b['aa'], b['cds'][:, :-1])
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 375, in forward
+    e_up = self.dna_conv(self._safe_hyena(up).transpose(1,2)).transpose(1,2)
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 359, in _safe_hyena
+    out = self.hyena(seq).last_hidden_state
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/peft/peft_model.py", line 563, in forward
+    return self.get_base_model()(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/deep_learning_project/models/hyena_dna/modeling_hyena.py", line 391, in forward
+    hidden_states, all_hidden_states = self.backbone(input_ids, inputs_embeds=inputs_embeds, output_hidden_states=output_hidden_states)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/deep_learning_project/models/hyena_dna/modeling_hyena.py", line 331, in forward
+    hidden_states = self._gradient_checkpointing_func(layer.__call__, hidden_states)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/_compile.py", line 32, in inner
+    return disable_fn(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 632, in _fn
+    return fn(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 489, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 264, in forward
+    outputs = run_function(*args)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/deep_learning_project/models/hyena_dna/modeling_hyena.py", line 273, in forward
+    hidden_states = self.mixer(hyena_normed)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/deep_learning_project/models/hyena_dna/modeling_hyena.py", line 200, in forward
+    u = self.in_proj(u).transpose(1, 2)
+IndexError: Dimension out of range (expected to be in range of [-2, 1], but got 2)
+Traceback (most recent call last):
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 622, in <module>
+    if __name__ == "__main__": main()
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 529, in main
+    p_org, p_pa, p_cds = model(b['up'], b['down'], b['introns'], b['aa'], b['cds'][:, :-1])
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 375, in forward
+    e_up = self.dna_conv(self._safe_hyena(up).transpose(1,2)).transpose(1,2)
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 359, in _safe_hyena
+    out = self.hyena(seq).last_hidden_state
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/peft/peft_model.py", line 563, in forward
+    return self.get_base_model()(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/deep_learning_project/models/hyena_dna/modeling_hyena.py", line 391, in forward
+    hidden_states, all_hidden_states = self.backbone(input_ids, inputs_embeds=inputs_embeds, output_hidden_states=output_hidden_states)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/deep_learning_project/models/hyena_dna/modeling_hyena.py", line 331, in forward
+    hidden_states = self._gradient_checkpointing_func(layer.__call__, hidden_states)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/_compile.py", line 32, in inner
+    return disable_fn(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 632, in _fn
+    return fn(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 489, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 264, in forward
+    outputs = run_function(*args)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/deep_learning_project/models/hyena_dna/modeling_hyena.py", line 273, in forward
+    hidden_states = self.mixer(hyena_normed)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/deep_learning_project/models/hyena_dna/modeling_hyena.py", line 200, in forward
+    u = self.in_proj(u).transpose(1, 2)
+IndexError: Dimension out of range (expected to be in range of [-2, 1], but got 2)

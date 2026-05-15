@@ -1,0 +1,81 @@
+{
+  "os":  "Linux-5.14.0-570.58.1.el9_6.x86_64-x86_64-with-glibc2.34",
+  "python":  "CPython 3.10.19",
+  "startedAt":  "2026-05-14T13:56:59.301444Z",
+  "args":  [
+    "--config",
+    "configs/config_0_R.json"
+  ],
+  "program":  "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py",
+  "codePath":  "train_55_reproduction.py",
+  "codePathLocal":  "train_55_reproduction.py",
+  "email":  "tallilo5011323@gmail.com",
+  "root":  "/scratch200/tallilo/deep_learning_project/runs/0_high_lr_R",
+  "host":  "compute-0-283.powerslurm",
+  "executable":  "/scratch200/tallilo/conda_envs/dna_env/bin/python",
+  "cpu_count":  64,
+  "cpu_count_logical":  64,
+  "gpu":  "NVIDIA A100-SXM4-80GB",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "804973940736",
+      "used":  "30242152448"
+    }
+  },
+  "memory":  {
+    "total":  "540282335232"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A100-SXM4-80GB",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-dbd44a39-15b8-6d04-5a05-2b5ad19b467f"
+    }
+  ],
+  "cudaVersion":  "13.0",
+  "slurm":  {
+    "cluster_name":  "skynet",
+    "conf":  "/var/spool/slurmd/conf-cache/slurm.conf",
+    "cpus_on_node":  "4",
+    "cpus_per_task":  "4",
+    "gpus_on_node":  "1",
+    "gtids":  "0",
+    "job_account":  "tamirtul-users_v2",
+    "job_cpus_per_node":  "4",
+    "job_end_time":  "1778853409",
+    "job_gid":  "1199",
+    "job_gpus":  "0",
+    "job_id":  "14632837",
+    "job_name":  "Fusion_Exp0",
+    "job_nodelist":  "compute-0-283",
+    "job_num_nodes":  "1",
+    "job_partition":  "gpu-general-pool",
+    "job_qos":  "public",
+    "job_start_time":  "1778767009",
+    "job_uid":  "989068",
+    "job_user":  "tallilo",
+    "jobid":  "14632837",
+    "localid":  "0",
+    "mem_per_node":  "32768",
+    "nnodes":  "1",
+    "nodeid":  "0",
+    "nodelist":  "compute-0-283",
+    "nprocs":  "1",
+    "ntasks":  "1",
+    "oom_kill_step":  "0",
+    "prio_process":  "0",
+    "procid":  "0",
+    "restart_count":  "1",
+    "submit_dir":  "/scratch200/tallilo/deep_learning_project",
+    "submit_host":  "powerslurm-login3.tau.ac.il",
+    "task_pid":  "2692342",
+    "tasks_per_node":  "1",
+    "topology_addr":  "compute-0-283",
+    "topology_addr_pattern":  "node",
+    "tres_per_task":  "cpu=4"
+  },
+  "writerId":  "ezs615fb4mqjpmahts3kqj7xb6xc98ex"
+}

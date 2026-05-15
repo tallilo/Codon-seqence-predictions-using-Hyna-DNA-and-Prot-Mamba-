@@ -1,0 +1,80 @@
+{
+  "os":  "Linux-5.14.0-570.23.1.el9_6.x86_64-x86_64-with-glibc2.34",
+  "python":  "CPython 3.10.19",
+  "startedAt":  "2026-05-14T19:33:22.476783Z",
+  "args":  [
+    "--config",
+    "configs/prot_mamba_pre_trained_32_r.json"
+  ],
+  "program":  "/scratch200/tallilo/deep_learning_project/prot_mamba_pre_trained.py",
+  "codePath":  "prot_mamba_pre_trained.py",
+  "codePathLocal":  "prot_mamba_pre_trained.py",
+  "email":  "tallilo5011323@gmail.com",
+  "root":  "/scratch200/tallilo/deep_learning_project/runs/prot_mamba_pre_trained_32_r",
+  "host":  "compute-0-53",
+  "executable":  "/scratch200/tallilo/conda_envs/dna_env/bin/python",
+  "cpu_count":  32,
+  "cpu_count_logical":  64,
+  "gpu":  "NVIDIA RTX A5000",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "356686573568",
+      "used":  "32833294336"
+    }
+  },
+  "memory":  {
+    "total":  "1081496412160"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA RTX A5000",
+      "memoryTotal":  "25757220864",
+      "cudaCores":  8192,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-712fbaea-f52e-a059-8e74-031048d22fef"
+    }
+  ],
+  "cudaVersion":  "12.9",
+  "slurm":  {
+    "cluster_name":  "skynet",
+    "conf":  "/var/spool/slurmd/conf-cache/slurm.conf",
+    "cpus_on_node":  "4",
+    "cpus_per_task":  "4",
+    "gpus_on_node":  "1",
+    "gtids":  "0",
+    "job_account":  "tamirtul-users_v2",
+    "job_cpus_per_node":  "4",
+    "job_end_time":  "1778873570",
+    "job_gid":  "1199",
+    "job_gpus":  "3",
+    "job_id":  "14655341",
+    "job_name":  "Fusion_Exp0",
+    "job_nodelist":  "compute-0-53",
+    "job_num_nodes":  "1",
+    "job_partition":  "gpu-general-pool",
+    "job_qos":  "public",
+    "job_start_time":  "1778787170",
+    "job_uid":  "989068",
+    "job_user":  "tallilo",
+    "jobid":  "14655341",
+    "localid":  "0",
+    "mem_per_node":  "32768",
+    "nnodes":  "1",
+    "nodeid":  "0",
+    "nodelist":  "compute-0-53",
+    "nprocs":  "1",
+    "ntasks":  "1",
+    "oom_kill_step":  "0",
+    "prio_process":  "0",
+    "procid":  "0",
+    "submit_dir":  "/scratch200/tallilo/deep_learning_project",
+    "submit_host":  "powerslurm-login",
+    "task_pid":  "2281069",
+    "tasks_per_node":  "1",
+    "topology_addr":  "compute-0-53",
+    "topology_addr_pattern":  "node",
+    "tres_per_task":  "cpu=4"
+  },
+  "writerId":  "obwwci9o0cw10h47nzprogth5kmeoaey"
+}

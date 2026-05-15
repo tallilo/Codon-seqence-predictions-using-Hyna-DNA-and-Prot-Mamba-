@@ -1,0 +1,6 @@
+{"time":"2026-05-15T06:14:14.063913755+03:00","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-05-15T06:14:14.625231287+03:00","level":"INFO","msg":"stream: created new stream","id":"prot_mamba_pre_trained_32_r"}
+{"time":"2026-05-15T06:14:14.625364384+03:00","level":"INFO","msg":"handler: started","stream_id":"prot_mamba_pre_trained_32_r"}
+{"time":"2026-05-15T06:14:14.629557278+03:00","level":"INFO","msg":"stream: started","id":"prot_mamba_pre_trained_32_r"}
+{"time":"2026-05-15T06:14:14.629723679+03:00","level":"INFO","msg":"writer: started","stream_id":"prot_mamba_pre_trained_32_r"}
+{"time":"2026-05-15T06:14:14.629732836+03:00","level":"INFO","msg":"sender: started","stream_id":"prot_mamba_pre_trained_32_r"}

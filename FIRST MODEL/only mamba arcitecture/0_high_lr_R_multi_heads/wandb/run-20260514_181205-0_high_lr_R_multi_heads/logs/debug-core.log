@@ -1,0 +1,14 @@
+{"time":"2026-05-14T18:12:05.728563934+03:00","level":"INFO","msg":"main: starting server","port-filename":"/scratch200/tallilo/my_cluster_caches/tmp/tmpj4sq4ks8/port-443916.txt","pid":443916,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-05-14T18:12:05.730851006+03:00","level":"INFO","msg":"main: starting server","port-filename":"/scratch200/tallilo/my_cluster_caches/tmp/tmpbi_5ni39/port-443919.txt","pid":443919,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-05-14T18:12:05.736432667+03:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":443916}
+{"time":"2026-05-14T18:12:05.736388488+03:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/scratch200/tallilo/my_cluster_caches/tmp/wandb-443916-443944-2279446096/socket","Net":"unix"}}
+{"time":"2026-05-14T18:12:05.741290111+03:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":443919}
+{"time":"2026-05-14T18:12:05.741280811+03:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/scratch200/tallilo/my_cluster_caches/tmp/wandb-443919-443943-320084064/socket","Net":"unix"}}
+{"time":"2026-05-14T18:12:05.914990071+03:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-05-14T18:12:05.915935248+03:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-05-14T18:12:05.931199466+03:00","level":"INFO","msg":"handleInformInit: received","streamId":"0_high_lr_R_multi_heads","id":"1(@)"}
+{"time":"2026-05-14T18:12:05.934265676+03:00","level":"INFO","msg":"handleInformInit: received","streamId":"0_high_lr_R_multi_heads","id":"1(@)"}
+{"time":"2026-05-14T18:12:06.477824171+03:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"0_high_lr_R_multi_heads","id":"1(@)"}
+{"time":"2026-05-14T18:12:06.481813357+03:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"0_high_lr_R_multi_heads","id":"1(@)"}
+{"time":"2026-05-14T18:12:12.590521704+03:00","level":"INFO","msg":"connection: cancelling request","id":"1(@)","requestId":"hb9w2fdsj8hk"}
+{"time":"2026-05-14T18:12:12.650052762+03:00","level":"INFO","msg":"connection: cancelling request","id":"1(@)","requestId":"p3q4xsxu8gc7"}

@@ -1,0 +1,7 @@
+{"time":"2026-05-14T22:33:24.335317133+03:00","level":"INFO","msg":"main: starting server","port-filename":"/scratch200/tallilo/my_cluster_caches/tmp/tmpp5b63use/port-2281086.txt","pid":2281086,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-05-14T22:33:24.349877858+03:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":2281086}
+{"time":"2026-05-14T22:33:24.349866507+03:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/scratch200/tallilo/my_cluster_caches/tmp/wandb-2281086-2281924-3203424030/socket","Net":"unix"}}
+{"time":"2026-05-14T22:33:24.508404414+03:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-05-14T22:33:24.570896199+03:00","level":"INFO","msg":"handleInformInit: received","streamId":"prot_mamba_pre_trained_32_r","id":"1(@)"}
+{"time":"2026-05-14T22:33:25.119997459+03:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"prot_mamba_pre_trained_32_r","id":"1(@)"}
+{"time":"2026-05-14T22:33:31.884824831+03:00","level":"INFO","msg":"connection: cancelling request","id":"1(@)","requestId":"ygg6kq1vtrcl"}

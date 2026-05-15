@@ -1,0 +1,7 @@
+{"time":"2026-05-15T06:14:13.87219964+03:00","level":"INFO","msg":"main: starting server","port-filename":"/scratch200/tallilo/my_cluster_caches/tmp/tmpo0plu029/port-25031.txt","pid":25031,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-05-15T06:14:13.881386324+03:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":25031}
+{"time":"2026-05-15T06:14:13.881446089+03:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/scratch200/tallilo/my_cluster_caches/tmp/wandb-25031-25392-3175386724/socket","Net":"unix"}}
+{"time":"2026-05-15T06:14:14.039563942+03:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-05-15T06:14:14.062693878+03:00","level":"INFO","msg":"handleInformInit: received","streamId":"prot_mamba_pre_trained_32_r","id":"1(@)"}
+{"time":"2026-05-15T06:14:14.629594249+03:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"prot_mamba_pre_trained_32_r","id":"1(@)"}
+{"time":"2026-05-15T06:14:21.236612965+03:00","level":"INFO","msg":"connection: cancelling request","id":"1(@)","requestId":"vzdpqlxgf2hn"}

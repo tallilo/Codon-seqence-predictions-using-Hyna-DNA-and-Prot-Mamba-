@@ -1,0 +1,25 @@
+2026-05-12 20:51:32,223 INFO    MainThread:2242438 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-05-12 20:51:32,223 INFO    MainThread:2242438 [wandb_setup.py:_flush():81] Configure stats pid to 2242438
+2026-05-12 20:51:32,223 INFO    MainThread:2242438 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-05-12 20:51:32,223 INFO    MainThread:2242438 [wandb_init.py:setup_run_log_directory():717] Logging user logs to /scratch200/tallilo/deep_learning_project/runs/0_high_lr_R/wandb/run-20260512_205131-0_high_lr_R/logs/debug.log
+2026-05-12 20:51:32,223 INFO    MainThread:2242438 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to /scratch200/tallilo/deep_learning_project/runs/0_high_lr_R/wandb/run-20260512_205131-0_high_lr_R/logs/debug-internal.log
+2026-05-12 20:51:32,223 INFO    MainThread:2242438 [wandb_init.py:init():844] calling init triggers
+2026-05-12 20:51:32,223 INFO    MainThread:2242438 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'experiment_id': '0_high_lr_R', 'lr': 0.0005, 'optimizer': 'adamw', 'weight_decay': 0.05, 'warmup_steps': 500, 'mask_prob': 0.15, 'span_length': 3, 'dropout': 0.1, 'l_org_weight': 0.1, 'l_pa_weight': 0.1, 'lora_dropout': 0.1, 'use_rslora': False, 'lora_r': 64, 'lora_alpha': 128, 'batch_size': 8, 'grad_accum': 4, 'epochs': 5, 'target_modules': ['query', 'key', 'value', 'dense', 'fc1', 'fc2', 'in_proj', 'x_proj', 'dt_proj', 'out_proj'], '_wandb': {}}
+2026-05-12 20:51:32,223 INFO    MainThread:2242438 [wandb_init.py:init():892] starting backend
+2026-05-12 20:51:33,041 INFO    MainThread:2242438 [wandb_init.py:init():895] sending inform_init request
+2026-05-12 20:51:33,051 INFO    MainThread:2242438 [wandb_init.py:init():903] backend started and connected
+2026-05-12 20:51:33,055 INFO    MainThread:2242438 [wandb_init.py:init():973] updated telemetry
+2026-05-12 20:51:33,055 INFO    MainThread:2242438 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-05-12 20:51:34,509 INFO    MainThread:2242438 [wandb_init.py:init():1037] run resumed
+2026-05-12 20:51:34,510 INFO    MainThread:2242438 [wandb_init.py:init():1042] starting run threads in backend
+2026-05-12 20:51:35,376 INFO    MainThread:2242438 [wandb_run.py:_console_start():2524] atexit reg
+2026-05-12 20:51:35,376 INFO    MainThread:2242438 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-05-12 20:51:35,376 INFO    MainThread:2242438 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-05-12 20:51:35,377 INFO    MainThread:2242438 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-05-12 20:51:35,387 INFO    MainThread:2242438 [wandb_init.py:init():1082] run started, returning control to user process
+2026-05-12 21:10:46,592 INFO    MainThread:2242438 [wandb_run.py:_finish():2291] finishing run tallilo5011323-tel-aviv-university/Deep_Genomic_Fusion/0_high_lr_R
+2026-05-12 21:10:46,593 INFO    MainThread:2242438 [wandb_run.py:_atexit_cleanup():2490] got exitcode: 0
+2026-05-12 21:10:46,595 INFO    MainThread:2242438 [wandb_run.py:_restore():2472] restore
+2026-05-12 21:10:46,595 INFO    MainThread:2242438 [wandb_run.py:_restore():2478] restore done
+2026-05-12 21:10:48,564 INFO    MainThread:2242438 [wandb_run.py:_footer_sync_info():3868] logging synced files

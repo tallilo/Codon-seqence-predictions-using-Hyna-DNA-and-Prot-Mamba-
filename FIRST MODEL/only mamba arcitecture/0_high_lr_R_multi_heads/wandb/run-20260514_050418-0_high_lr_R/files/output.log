@@ -1,0 +1,43 @@
+[05:04:20] 🚀 W&B Initialized. Run ID: 0_high_lr_R
+[05:04:20] 📂 Loading TRAIN Dataset from /scratch200/tallilo/deep_learning_project/data/TRAIN_HOMOLOGY_SPLIT.csv...
+[05:04:40] ✅ CSV Loaded successfully. Raw rows: 42090
+[05:04:40] ✅ Filtered short sequences. Remaining: 42090
+[05:04:40] ✅ Dataset Ready. Total samples: 42090
+[05:04:40] 📂 Loading VAL Dataset from /scratch200/tallilo/deep_learning_project/data/TEST_HOMOLOGY_SPLIT.csv...
+[05:04:42] ✅ CSV Loaded successfully. Raw rows: 5451
+[05:04:42] ✅ Filtered short sequences. Remaining: 5451
+[05:04:42] ✅ Dataset Ready. Total samples: 5451
+[05:04:42] 🔧 Initializing Hyena...
+[05:04:43] ✅ Pre-trained Hyena weights loaded successfully.
+[05:04:43] 🔧 Initializing ProtMamba (Random 'Garbage' Weights)...
+You are using an old version of the checkpointing format that is deprecated (We will also silently ignore `gradient_checkpointing_kwargs` in case you passed it).Please update to the new format on your modeling file. To use the new format, you need to completely remove the definition of the method `_set_gradient_checkpointing` in your model.
+/scratch200/tallilo/deep_learning_project/train_55_reproduction.py:503: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(f"{latest_ckpt_path}/training_state.pth", map_location=device)
+[05:04:46] 📉 Resuming with New Species Token! LR forced to 5e-05 (Fresh Optimizer)
+[05:04:46] 🔥 STARTING TRAINING LOOP...
+/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/utils/checkpoint.py:87: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+Traceback (most recent call last):
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 658, in <module>
+    if __name__ == "__main__": main()
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 564, in main
+    p_org, p_pa, p_cds = model(b['up'], b['down'], b['introns'], b['aa'], safe_cds[:, :-1])
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 406, in forward
+    memory = torch.cat([e_species, resampled_dna, self.norm(e_aa)], dim=1)
+RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 15992 but got size 8 for tensor number 1 in the list.
+Traceback (most recent call last):
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 658, in <module>
+    if __name__ == "__main__": main()
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 564, in main
+    p_org, p_pa, p_cds = model(b['up'], b['down'], b['introns'], b['aa'], safe_cds[:, :-1])
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch200/tallilo/deep_learning_project/train_55_reproduction.py", line 406, in forward
+    memory = torch.cat([e_species, resampled_dna, self.norm(e_aa)], dim=1)
+RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 15992 but got size 8 for tensor number 1 in the list.

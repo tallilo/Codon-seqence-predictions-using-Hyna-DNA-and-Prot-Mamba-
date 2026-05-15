@@ -1,0 +1,478 @@
+[12:43:02] 🚀 W&B Initialized. Run ID: 0_high_lr_R_multi_heads
+[12:43:02] 📂 Loading TRAIN Dataset from /scratch200/tallilo/deep_learning_project/data/TRAIN_HOMOLOGY_SPLIT.csv...
+[12:43:22] ✅ CSV Loaded successfully. Raw rows: 42090
+[12:43:22] ✅ Filtered short sequences. Remaining: 42090
+[12:43:22] ✅ Dataset Ready. Total samples: 42090
+[12:43:22] 📂 Loading VAL Dataset from /scratch200/tallilo/deep_learning_project/data/TEST_HOMOLOGY_SPLIT.csv...
+[12:43:24] ✅ CSV Loaded successfully. Raw rows: 5451
+[12:43:24] ✅ Filtered short sequences. Remaining: 5451
+[12:43:24] ✅ Dataset Ready. Total samples: 5451
+[12:43:24] 🔧 Initializing Hyena...
+[12:43:25] ✅ Pre-trained Hyena weights loaded successfully.
+[12:43:25] 🔧 Initializing ProtMamba (Random 'Garbage' Weights)...
+You are using an old version of the checkpointing format that is deprecated (We will also silently ignore `gradient_checkpointing_kwargs` in case you passed it).Please update to the new format on your modeling file. To use the new format, you need to completely remove the definition of the method `_set_gradient_checkpointing` in your model.
+[12:43:26] 🔍 PARAMETER CHECK:
+   - Trainable params: 23,235,466
+   - Total params: 90,947,210
+   - Percentage Trainable: 25.5483%
+/scratch200/tallilo/deep_learning_project/train_55_reproduction_multi_heads.py:543: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(f"{latest_ckpt_path}/training_state.pth", map_location=device)
+[12:43:32] ✅ Optimizer & Scheduler states loaded.
+[12:43:32] 📉 Resuming EXACTLY from Epoch 23, Step 30900, Batch 2619
+[12:43:32] 🔥 STARTING TRAINING LOOP...
+[12:43:33] ⏩ Fast-forwarding... Skipping batch 0 / 2619
+[12:43:39] ⏩ Fast-forwarding... Skipping batch 100 / 2619
+[12:43:45] ⏩ Fast-forwarding... Skipping batch 200 / 2619
+[12:43:50] ⏩ Fast-forwarding... Skipping batch 300 / 2619
+[12:43:56] ⏩ Fast-forwarding... Skipping batch 400 / 2619
+[12:44:01] ⏩ Fast-forwarding... Skipping batch 500 / 2619
+[12:44:07] ⏩ Fast-forwarding... Skipping batch 600 / 2619
+[12:44:13] ⏩ Fast-forwarding... Skipping batch 700 / 2619
+[12:44:18] ⏩ Fast-forwarding... Skipping batch 800 / 2619
+[12:44:24] ⏩ Fast-forwarding... Skipping batch 900 / 2619
+[12:44:30] ⏩ Fast-forwarding... Skipping batch 1000 / 2619
+[12:44:35] ⏩ Fast-forwarding... Skipping batch 1100 / 2619
+[12:44:40] ⏩ Fast-forwarding... Skipping batch 1200 / 2619
+[12:44:46] ⏩ Fast-forwarding... Skipping batch 1300 / 2619
+[12:44:51] ⏩ Fast-forwarding... Skipping batch 1400 / 2619
+[12:44:57] ⏩ Fast-forwarding... Skipping batch 1500 / 2619
+[12:45:03] ⏩ Fast-forwarding... Skipping batch 1600 / 2619
+[12:45:08] ⏩ Fast-forwarding... Skipping batch 1700 / 2619
+[12:45:14] ⏩ Fast-forwarding... Skipping batch 1800 / 2619
+[12:45:19] ⏩ Fast-forwarding... Skipping batch 1900 / 2619
+[12:45:25] ⏩ Fast-forwarding... Skipping batch 2000 / 2619
+[12:45:30] ⏩ Fast-forwarding... Skipping batch 2100 / 2619
+[12:45:36] ⏩ Fast-forwarding... Skipping batch 2200 / 2619
+[12:45:41] ⏩ Fast-forwarding... Skipping batch 2300 / 2619
+[12:45:47] ⏩ Fast-forwarding... Skipping batch 2400 / 2619
+[12:45:53] ⏩ Fast-forwarding... Skipping batch 2500 / 2619
+[12:45:58] ⏩ Fast-forwarding... Skipping batch 2600 / 2619
+/scratch200/tallilo/conda_envs/dna_env/lib/python3.10/site-packages/torch/utils/checkpoint.py:87: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+[12:46:19] Step 30905 | Total: 2.0039 | CDS: 1.8524
+wandb: WARNING Tried to log to step 30905 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:46:33] Step 30910 | Total: 2.6649 | CDS: 2.4783
+wandb: WARNING Tried to log to step 30910 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:46:47] Step 30915 | Total: 1.9045 | CDS: 1.7550
+wandb: WARNING Tried to log to step 30915 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:47:01] Step 30920 | Total: 2.3902 | CDS: 2.2522
+wandb: WARNING Tried to log to step 30920 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:47:15] Step 30925 | Total: 2.2077 | CDS: 2.0923
+wandb: WARNING Tried to log to step 30925 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:47:29] Step 30930 | Total: 1.9100 | CDS: 1.8071
+wandb: WARNING Tried to log to step 30930 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:47:43] Step 30935 | Total: 1.8482 | CDS: 1.7256
+wandb: WARNING Tried to log to step 30935 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:47:57] Step 30940 | Total: 1.8959 | CDS: 1.8128
+wandb: WARNING Tried to log to step 30940 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:48:11] Step 30945 | Total: 1.9472 | CDS: 1.7979
+wandb: WARNING Tried to log to step 30945 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:48:25] Step 30950 | Total: 1.9148 | CDS: 1.8111
+wandb: WARNING Tried to log to step 30950 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:48:39] Step 30955 | Total: 2.1002 | CDS: 1.9641
+wandb: WARNING Tried to log to step 30955 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:48:53] Step 30960 | Total: 1.9614 | CDS: 1.8422
+wandb: WARNING Tried to log to step 30960 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:49:07] Step 30965 | Total: 2.7884 | CDS: 2.5897
+wandb: WARNING Tried to log to step 30965 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:49:21] Step 30970 | Total: 1.9531 | CDS: 1.8202
+wandb: WARNING Tried to log to step 30970 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:49:35] Step 30975 | Total: 2.0746 | CDS: 1.9518
+wandb: WARNING Tried to log to step 30975 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:49:49] Step 30980 | Total: 2.4016 | CDS: 2.2743
+wandb: WARNING Tried to log to step 30980 that is less than the current step 30981. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[12:50:03] Step 30985 | Total: 2.0249 | CDS: 1.8360
+[12:50:18] Step 30990 | Total: 2.7402 | CDS: 2.5360
+[12:50:32] Step 30995 | Total: 2.0498 | CDS: 1.9023
+[12:50:46] Step 31000 | Total: 1.9414 | CDS: 1.7955
+[12:51:00] Step 31005 | Total: 2.3888 | CDS: 2.2217
+[12:51:14] Step 31010 | Total: 2.1151 | CDS: 1.8866
+[12:51:28] Step 31015 | Total: 2.0873 | CDS: 1.8947
+[12:51:42] Step 31020 | Total: 2.0219 | CDS: 1.9274
+[12:51:56] Step 31025 | Total: 2.0080 | CDS: 1.9126
+[12:52:10] Step 31030 | Total: 1.9853 | CDS: 1.8045
+[12:52:24] Step 31035 | Total: 2.6699 | CDS: 2.5125
+[12:52:38] Step 31040 | Total: 2.0034 | CDS: 1.9081
+[12:52:52] Step 31045 | Total: 1.8505 | CDS: 1.7339
+[12:53:06] Step 31050 | Total: 1.8663 | CDS: 1.7366
+[12:53:08] 💾 Full checkpoint saved at Epoch 23, Step 31050, Batch 3219
+[12:53:22] Step 31055 | Total: 2.0337 | CDS: 1.8962
+[12:53:36] Step 31060 | Total: 2.4820 | CDS: 2.3288
+[12:53:50] Step 31065 | Total: 1.9398 | CDS: 1.8082
+[12:54:04] Step 31070 | Total: 2.1418 | CDS: 2.0078
+[12:54:18] Step 31075 | Total: 2.0818 | CDS: 1.9536
+[12:54:32] Step 31080 | Total: 2.3617 | CDS: 2.2511
+[12:54:46] Step 31085 | Total: 2.2366 | CDS: 2.1186
+[12:55:00] Step 31090 | Total: 2.3101 | CDS: 2.1565
+[12:55:14] Step 31095 | Total: 1.9319 | CDS: 1.7909
+[12:55:28] Step 31100 | Total: 1.9640 | CDS: 1.8004
+[12:55:42] Step 31105 | Total: 2.1722 | CDS: 2.0161
+[12:55:57] Step 31110 | Total: 2.4235 | CDS: 2.2863
+[12:56:11] Step 31115 | Total: 2.2763 | CDS: 2.1463
+[12:56:25] Step 31120 | Total: 2.5439 | CDS: 2.4340
+[12:56:39] Step 31125 | Total: 2.3388 | CDS: 2.2136
+[12:56:53] Step 31130 | Total: 1.8714 | CDS: 1.7158
+[12:57:07] Step 31135 | Total: 2.4016 | CDS: 2.2893
+[12:57:21] Step 31140 | Total: 2.0001 | CDS: 1.8697
+[12:57:35] Step 31145 | Total: 2.3090 | CDS: 2.1563
+[12:57:49] Step 31150 | Total: 2.6231 | CDS: 2.4388
+[12:58:03] Step 31155 | Total: 2.2882 | CDS: 2.1664
+[12:58:17] Step 31160 | Total: 2.0432 | CDS: 1.8981
+[12:58:31] Step 31165 | Total: 1.9849 | CDS: 1.8627
+[12:58:45] Step 31170 | Total: 2.2474 | CDS: 2.1320
+[12:58:59] Step 31175 | Total: 2.3809 | CDS: 2.2679
+[12:59:13] Step 31180 | Total: 2.4476 | CDS: 2.3248
+[12:59:27] Step 31185 | Total: 1.9269 | CDS: 1.8103
+[12:59:41] Step 31190 | Total: 1.8070 | CDS: 1.6912
+[12:59:55] Step 31195 | Total: 1.9889 | CDS: 1.8916
+[13:00:09] Step 31200 | Total: 2.0982 | CDS: 1.9684
+[13:00:11] 💾 Full checkpoint saved at Epoch 23, Step 31200, Batch 3819
+[13:00:26] Step 31205 | Total: 2.1381 | CDS: 2.0204
+[13:00:40] Step 31210 | Total: 2.1988 | CDS: 2.0757
+[13:00:54] Step 31215 | Total: 2.5975 | CDS: 2.4662
+[13:01:08] Step 31220 | Total: 2.4332 | CDS: 2.2491
+[13:01:22] Step 31225 | Total: 1.9846 | CDS: 1.8474
+[13:01:36] Step 31230 | Total: 2.1539 | CDS: 1.9917
+[13:01:50] Step 31235 | Total: 2.2333 | CDS: 2.1194
+[13:02:04] Step 31240 | Total: 2.4869 | CDS: 2.3572
+[13:02:18] Step 31245 | Total: 2.1607 | CDS: 1.9914
+[13:02:32] Step 31250 | Total: 2.0081 | CDS: 1.8734
+[13:02:46] Step 31255 | Total: 1.9881 | CDS: 1.8394
+[13:03:00] Step 31260 | Total: 1.8100 | CDS: 1.6932
+[13:03:14] Step 31265 | Total: 2.3328 | CDS: 2.2313
+[13:03:28] Step 31270 | Total: 2.4335 | CDS: 2.2880
+[13:03:42] Step 31275 | Total: 2.0654 | CDS: 1.9474
+[13:03:56] Step 31280 | Total: 1.8985 | CDS: 1.7793
+[13:04:10] Step 31285 | Total: 2.1466 | CDS: 2.0041
+[13:04:24] Step 31290 | Total: 2.1840 | CDS: 2.0560
+[13:04:38] Step 31295 | Total: 1.8413 | CDS: 1.6986
+[13:04:52] Step 31300 | Total: 2.8046 | CDS: 2.6172
+[13:05:06] Step 31305 | Total: 2.0946 | CDS: 1.9614
+[13:05:20] Step 31310 | Total: 2.3510 | CDS: 2.2170
+[13:05:34] Step 31315 | Total: 2.0867 | CDS: 1.9496
+[13:05:48] Step 31320 | Total: 2.3438 | CDS: 2.1994
+[13:06:02] Step 31325 | Total: 2.0917 | CDS: 1.9639
+[13:06:16] Step 31330 | Total: 2.0136 | CDS: 1.8832
+[13:06:30] Step 31335 | Total: 2.2192 | CDS: 2.1165
+[13:06:44] Step 31340 | Total: 1.9579 | CDS: 1.7964
+[13:06:58] Step 31345 | Total: 1.8038 | CDS: 1.6788
+[13:07:12] Step 31350 | Total: 2.7507 | CDS: 2.6173
+[13:07:15] 💾 Full checkpoint saved at Epoch 23, Step 31350, Batch 4419
+[13:07:29] Step 31355 | Total: 2.1426 | CDS: 1.9809
+[13:07:43] Step 31360 | Total: 1.9690 | CDS: 1.8469
+[13:07:57] Step 31365 | Total: 1.8886 | CDS: 1.7911
+[13:08:11] Step 31370 | Total: 1.8193 | CDS: 1.6967
+[13:08:25] Step 31375 | Total: 2.3157 | CDS: 2.1877
+[13:08:39] Step 31380 | Total: 2.0828 | CDS: 1.9222
+[13:08:53] Step 31385 | Total: 2.3464 | CDS: 2.2385
+[13:09:07] Step 31390 | Total: 1.9550 | CDS: 1.8093
+[13:09:21] Step 31395 | Total: 2.1208 | CDS: 1.9614
+[13:09:35] Step 31400 | Total: 2.1972 | CDS: 2.0198
+[13:09:49] Step 31405 | Total: 2.8059 | CDS: 2.6294
+[13:10:03] Step 31410 | Total: 2.3872 | CDS: 2.2624
+[13:10:17] Step 31415 | Total: 2.0624 | CDS: 1.9268
+[13:10:31] Step 31420 | Total: 2.2613 | CDS: 2.1115
+[13:10:45] Step 31425 | Total: 2.2482 | CDS: 2.1270
+[13:10:59] Step 31430 | Total: 1.9494 | CDS: 1.8292
+[13:11:13] Step 31435 | Total: 2.4518 | CDS: 2.2527
+[13:11:27] Step 31440 | Total: 2.5249 | CDS: 2.3352
+[13:11:42] Step 31445 | Total: 2.2873 | CDS: 2.0549
+[13:11:56] Step 31450 | Total: 2.1313 | CDS: 1.9770
+[13:12:10] Step 31455 | Total: 2.0254 | CDS: 1.8906
+[13:12:24] Step 31460 | Total: 1.8373 | CDS: 1.7058
+[13:12:38] Step 31465 | Total: 2.4263 | CDS: 2.3092
+[13:12:52] Step 31470 | Total: 2.0501 | CDS: 1.9330
+[13:13:06] Step 31475 | Total: 2.0772 | CDS: 1.9394
+[13:13:20] Step 31480 | Total: 1.9191 | CDS: 1.7658
+[13:13:34] Step 31485 | Total: 1.9972 | CDS: 1.8189
+[13:13:48] Step 31490 | Total: 1.9424 | CDS: 1.8142
+[13:14:02] Step 31495 | Total: 1.9768 | CDS: 1.8451
+[13:14:16] Step 31500 | Total: 2.0251 | CDS: 1.8935
+[13:14:18] 💾 Full checkpoint saved at Epoch 23, Step 31500, Batch 5019
+[13:14:32] Step 31505 | Total: 2.2614 | CDS: 2.1590
+[13:14:46] Step 31510 | Total: 2.2829 | CDS: 2.1106
+[13:15:00] Step 31515 | Total: 2.2404 | CDS: 2.0183
+[13:15:14] Step 31520 | Total: 2.6359 | CDS: 2.4815
+[13:15:28] Step 31525 | Total: 2.3806 | CDS: 2.2284
+[13:15:42] Step 31530 | Total: 2.2045 | CDS: 2.0717
+[13:15:56] Step 31535 | Total: 2.1550 | CDS: 2.0151
+[13:16:10] Step 31540 | Total: 1.9637 | CDS: 1.8326
+[13:16:24] Step 31545 | Total: 2.3087 | CDS: 2.1855
+[13:16:38] Step 31550 | Total: 2.3473 | CDS: 2.1866
+[13:16:53] Step 31555 | Total: 1.9205 | CDS: 1.7923
+[13:17:07] Step 31560 | Total: 2.2346 | CDS: 2.0836
+[13:24:55] 📊 Epoch 24 Val: Loss 1.2579
+[13:24:57] 💾 Full checkpoint saved at Epoch 24, Step 31560, Batch -1
+[13:24:59] 💾 Full checkpoint saved at Epoch 24, Step 31560, Batch -1
+[13:25:14] Step 31565 | Total: 1.8585 | CDS: 1.7151
+[13:25:28] Step 31570 | Total: 1.9310 | CDS: 1.8412
+[13:25:42] Step 31575 | Total: 2.1399 | CDS: 1.9240
+[13:25:56] Step 31580 | Total: 1.7045 | CDS: 1.5933
+[13:26:10] Step 31585 | Total: 2.0981 | CDS: 1.9917
+[13:26:24] Step 31590 | Total: 1.9875 | CDS: 1.8108
+[13:26:38] Step 31595 | Total: 2.0394 | CDS: 1.9075
+[13:26:52] Step 31600 | Total: 1.9088 | CDS: 1.7776
+[13:27:06] Step 31605 | Total: 1.8817 | CDS: 1.7049
+[13:27:20] Step 31610 | Total: 1.9647 | CDS: 1.8486
+[13:27:34] Step 31615 | Total: 2.3047 | CDS: 2.0942
+[13:27:49] Step 31620 | Total: 2.3167 | CDS: 2.1710
+[13:28:03] Step 31625 | Total: 1.9793 | CDS: 1.8120
+[13:28:17] Step 31630 | Total: 1.8561 | CDS: 1.7035
+[13:28:31] Step 31635 | Total: 2.3447 | CDS: 2.2188
+[13:28:45] Step 31640 | Total: 1.9742 | CDS: 1.8618
+[13:28:59] Step 31645 | Total: 1.9640 | CDS: 1.8303
+[13:29:13] Step 31650 | Total: 1.9165 | CDS: 1.7745
+[13:29:15] 💾 Full checkpoint saved at Epoch 24, Step 31650, Batch 359
+[13:29:29] Step 31655 | Total: 2.2594 | CDS: 2.0696
+[13:29:43] Step 31660 | Total: 2.0924 | CDS: 1.9758
+[13:29:57] Step 31665 | Total: 2.2249 | CDS: 2.0460
+[13:30:11] Step 31670 | Total: 1.9771 | CDS: 1.8170
+[13:30:25] Step 31675 | Total: 1.9762 | CDS: 1.8554
+[13:30:40] Step 31680 | Total: 1.8861 | CDS: 1.7433
+[13:30:54] Step 31685 | Total: 2.1065 | CDS: 1.9897
+[13:31:08] Step 31690 | Total: 2.1508 | CDS: 2.0035
+[13:31:22] Step 31695 | Total: 1.9945 | CDS: 1.8268
+[13:31:36] Step 31700 | Total: 2.2682 | CDS: 2.1333
+[13:31:50] Step 31705 | Total: 1.8916 | CDS: 1.7264
+[13:32:04] Step 31710 | Total: 2.6561 | CDS: 2.4823
+[13:32:18] Step 31715 | Total: 2.5845 | CDS: 2.4334
+[13:32:32] Step 31720 | Total: 1.8228 | CDS: 1.7055
+[13:32:46] Step 31725 | Total: 2.2757 | CDS: 2.1375
+[13:33:00] Step 31730 | Total: 1.9033 | CDS: 1.7946
+[13:33:14] Step 31735 | Total: 2.1000 | CDS: 1.9782
+[13:33:28] Step 31740 | Total: 1.9438 | CDS: 1.8305
+[13:33:42] Step 31745 | Total: 1.9757 | CDS: 1.8437
+[13:33:56] Step 31750 | Total: 1.9462 | CDS: 1.7366
+[13:34:10] Step 31755 | Total: 2.0224 | CDS: 1.8445
+[13:34:24] Step 31760 | Total: 2.6343 | CDS: 2.5110
+[13:34:38] Step 31765 | Total: 1.9363 | CDS: 1.8355
+[13:34:52] Step 31770 | Total: 2.1315 | CDS: 2.0038
+[13:35:06] Step 31775 | Total: 2.2087 | CDS: 1.9961
+[13:35:20] Step 31780 | Total: 2.0135 | CDS: 1.8963
+[13:35:35] Step 31785 | Total: 2.3390 | CDS: 2.1680
+[13:35:49] Step 31790 | Total: 1.9468 | CDS: 1.7827
+[13:36:03] Step 31795 | Total: 1.8488 | CDS: 1.7028
+[13:36:17] Step 31800 | Total: 2.2798 | CDS: 2.1470
+[13:36:19] 💾 Full checkpoint saved at Epoch 24, Step 31800, Batch 959
+[13:36:33] Step 31805 | Total: 1.9289 | CDS: 1.8189
+[13:36:47] Step 31810 | Total: 2.2103 | CDS: 2.0865
+[13:37:01] Step 31815 | Total: 2.3725 | CDS: 2.2705
+[13:37:15] Step 31820 | Total: 2.0224 | CDS: 1.8953
+[13:37:29] Step 31825 | Total: 1.9853 | CDS: 1.8174
+[13:37:43] Step 31830 | Total: 2.2575 | CDS: 2.1251
+[13:37:57] Step 31835 | Total: 2.0305 | CDS: 1.9244
+[13:38:11] Step 31840 | Total: 1.9666 | CDS: 1.8065
+[13:38:25] Step 31845 | Total: 2.0329 | CDS: 1.9041
+[13:38:40] Step 31850 | Total: 1.8179 | CDS: 1.7205
+[13:38:54] Step 31855 | Total: 1.9442 | CDS: 1.7817
+[13:39:08] Step 31860 | Total: 1.9449 | CDS: 1.8097
+[13:39:22] Step 31865 | Total: 2.3864 | CDS: 2.2857
+[13:39:36] Step 31870 | Total: 1.9682 | CDS: 1.8493
+[13:39:50] Step 31875 | Total: 2.2201 | CDS: 2.0023
+[13:40:04] Step 31880 | Total: 2.2274 | CDS: 2.0318
+[13:40:18] Step 31885 | Total: 1.9819 | CDS: 1.8728
+[13:40:32] Step 31890 | Total: 1.9006 | CDS: 1.7584
+[13:40:46] Step 31895 | Total: 1.7841 | CDS: 1.6564
+[13:41:00] Step 31900 | Total: 2.1928 | CDS: 2.1027
+[13:41:14] Step 31905 | Total: 2.6899 | CDS: 2.5569
+[13:41:28] Step 31910 | Total: 1.8676 | CDS: 1.7271
+[13:41:42] Step 31915 | Total: 2.2151 | CDS: 2.0237
+[13:41:56] Step 31920 | Total: 2.3313 | CDS: 2.1762
+[13:42:10] Step 31925 | Total: 1.8289 | CDS: 1.7218
+[13:42:24] Step 31930 | Total: 2.3526 | CDS: 2.2310
+[13:42:38] Step 31935 | Total: 2.6558 | CDS: 2.3924
+[13:42:52] Step 31940 | Total: 2.2254 | CDS: 2.0721
+[13:43:06] Step 31945 | Total: 1.8321 | CDS: 1.6880
+[13:43:20] Step 31950 | Total: 1.9849 | CDS: 1.8136
+[13:43:23] 💾 Full checkpoint saved at Epoch 24, Step 31950, Batch 1559
+[13:43:37] Step 31955 | Total: 2.3955 | CDS: 2.2741
+[13:43:51] Step 31960 | Total: 1.9713 | CDS: 1.8391
+[13:44:05] Step 31965 | Total: 2.3722 | CDS: 2.2066
+[13:44:19] Step 31970 | Total: 2.2214 | CDS: 2.0604
+[13:44:33] Step 31975 | Total: 2.2072 | CDS: 2.0307
+[13:44:47] Step 31980 | Total: 2.3912 | CDS: 2.2469
+[13:45:01] Step 31985 | Total: 1.9228 | CDS: 1.8222
+[13:45:15] Step 31990 | Total: 2.1423 | CDS: 1.9466
+[13:45:29] Step 31995 | Total: 2.3418 | CDS: 2.1942
+[13:45:43] Step 32000 | Total: 2.1134 | CDS: 1.9454
+[13:45:57] Step 32005 | Total: 2.6561 | CDS: 2.4668
+[13:46:11] Step 32010 | Total: 1.9840 | CDS: 1.8245
+[13:46:25] Step 32015 | Total: 2.3563 | CDS: 2.1723
+[13:46:39] Step 32020 | Total: 2.1360 | CDS: 1.9982
+[13:46:53] Step 32025 | Total: 1.9928 | CDS: 1.8517
+[13:47:07] Step 32030 | Total: 1.9474 | CDS: 1.8299
+[13:47:21] Step 32035 | Total: 1.9922 | CDS: 1.8243
+[13:47:35] Step 32040 | Total: 2.4086 | CDS: 2.2416
+[13:47:49] Step 32045 | Total: 1.8548 | CDS: 1.7491
+[13:48:03] Step 32050 | Total: 2.3605 | CDS: 2.2561
+[13:48:17] Step 32055 | Total: 1.8344 | CDS: 1.7179
+[13:48:31] Step 32060 | Total: 2.1795 | CDS: 2.0298
+[13:48:45] Step 32065 | Total: 2.1151 | CDS: 2.0083
+[13:48:59] Step 32070 | Total: 2.8230 | CDS: 2.5635
+[13:49:13] Step 32075 | Total: 2.1823 | CDS: 1.9951
+[13:49:27] Step 32080 | Total: 1.9491 | CDS: 1.7636
+[13:49:41] Step 32085 | Total: 1.9704 | CDS: 1.8499
+[13:49:55] Step 32090 | Total: 1.9985 | CDS: 1.8788
+[13:50:09] Step 32095 | Total: 1.9636 | CDS: 1.8305
+[13:50:23] Step 32100 | Total: 2.5489 | CDS: 2.3884
+[13:50:28] 💾 Full checkpoint saved at Epoch 24, Step 32100, Batch 2159
+[13:50:42] Step 32105 | Total: 2.0330 | CDS: 1.9068
+[13:50:56] Step 32110 | Total: 1.8951 | CDS: 1.7894
+[13:51:10] Step 32115 | Total: 2.2040 | CDS: 2.0359
+[13:51:24] Step 32120 | Total: 2.4333 | CDS: 2.2845
+[13:51:38] Step 32125 | Total: 1.9486 | CDS: 1.7885
+[13:51:52] Step 32130 | Total: 2.2199 | CDS: 2.0478
+[13:52:06] Step 32135 | Total: 2.0283 | CDS: 1.8737
+[13:52:20] Step 32140 | Total: 1.9608 | CDS: 1.8113
+[13:52:34] Step 32145 | Total: 2.5407 | CDS: 2.4231
+[13:52:48] Step 32150 | Total: 2.0233 | CDS: 1.8581
+[13:53:02] Step 32155 | Total: 1.9507 | CDS: 1.8058
+[13:53:16] Step 32160 | Total: 1.9540 | CDS: 1.7383
+[13:53:30] Step 32165 | Total: 2.0150 | CDS: 1.8917
+[13:53:44] Step 32170 | Total: 2.1298 | CDS: 1.9435
+[13:53:58] Step 32175 | Total: 2.3391 | CDS: 2.1654
+[13:54:13] Step 32180 | Total: 2.1155 | CDS: 1.9626
+[13:54:27] Step 32185 | Total: 1.9948 | CDS: 1.8287
+[13:54:41] Step 32190 | Total: 2.0583 | CDS: 1.9428
+[13:54:55] Step 32195 | Total: 2.0911 | CDS: 1.9474
+[13:55:09] Step 32200 | Total: 1.8833 | CDS: 1.7813
+[13:55:23] Step 32205 | Total: 2.3805 | CDS: 2.2753
+[13:55:37] Step 32210 | Total: 2.1325 | CDS: 1.9854
+[13:55:51] Step 32215 | Total: 2.2726 | CDS: 2.1251
+[13:56:05] Step 32220 | Total: 2.2578 | CDS: 2.0488
+[13:56:19] Step 32225 | Total: 2.5559 | CDS: 2.3554
+[13:56:33] Step 32230 | Total: 2.8171 | CDS: 2.6152
+[13:56:47] Step 32235 | Total: 1.9574 | CDS: 1.8323
+[13:57:01] Step 32240 | Total: 2.1595 | CDS: 1.9803
+[13:57:15] Step 32245 | Total: 2.1123 | CDS: 1.9682
+[13:57:29] Step 32250 | Total: 1.9351 | CDS: 1.7946
+[13:57:32] 💾 Full checkpoint saved at Epoch 24, Step 32250, Batch 2759
+[13:57:46] Step 32255 | Total: 2.0610 | CDS: 1.9193
+[13:58:00] Step 32260 | Total: 2.2960 | CDS: 2.1983
+[13:58:14] Step 32265 | Total: 2.2348 | CDS: 2.0854
+[13:58:28] Step 32270 | Total: 2.7702 | CDS: 2.6389
+[13:58:42] Step 32275 | Total: 1.9301 | CDS: 1.7815
+[13:58:56] Step 32280 | Total: 1.9329 | CDS: 1.8115
+[13:59:10] Step 32285 | Total: 2.0847 | CDS: 1.9144
+[13:59:24] Step 32290 | Total: 1.8722 | CDS: 1.7897
+[13:59:38] Step 32295 | Total: 2.0899 | CDS: 1.9712
+[13:59:52] Step 32300 | Total: 2.2520 | CDS: 2.0889
+[14:00:06] Step 32305 | Total: 2.5536 | CDS: 2.3154
+[14:00:20] Step 32310 | Total: 2.0108 | CDS: 1.8520
+[14:00:34] Step 32315 | Total: 2.0670 | CDS: 1.8833
+[14:00:48] Step 32320 | Total: 2.1113 | CDS: 1.9439
+[14:01:02] Step 32325 | Total: 1.7623 | CDS: 1.6478
+[14:01:17] Step 32330 | Total: 1.8673 | CDS: 1.7178
+[14:01:31] Step 32335 | Total: 1.7981 | CDS: 1.6902
+[14:01:45] Step 32340 | Total: 2.4809 | CDS: 2.3272
+[14:01:59] Step 32345 | Total: 2.4530 | CDS: 2.2742
+[14:02:13] Step 32350 | Total: 2.1285 | CDS: 1.9138
+[14:02:27] Step 32355 | Total: 1.8589 | CDS: 1.7109
+[14:02:41] Step 32360 | Total: 2.4770 | CDS: 2.3317
+[14:02:55] Step 32365 | Total: 1.9264 | CDS: 1.7906
+[14:03:09] Step 32370 | Total: 2.2372 | CDS: 2.0077
+[14:03:23] Step 32375 | Total: 2.5869 | CDS: 2.3786
+[14:03:37] Step 32380 | Total: 1.8628 | CDS: 1.7377
+[14:03:51] Step 32385 | Total: 2.0721 | CDS: 1.9413
+[14:04:05] Step 32390 | Total: 2.1578 | CDS: 2.0089
+[14:04:19] Step 32395 | Total: 2.0339 | CDS: 1.9209
+[14:04:33] Step 32400 | Total: 2.1772 | CDS: 2.0125
+[14:04:36] 💾 Full checkpoint saved at Epoch 24, Step 32400, Batch 3359
+[14:04:50] Step 32405 | Total: 2.1924 | CDS: 2.0750
+[14:05:04] Step 32410 | Total: 2.0357 | CDS: 1.8620
+[14:05:18] Step 32415 | Total: 2.4241 | CDS: 2.2280
+[14:05:32] Step 32420 | Total: 2.2391 | CDS: 2.1167
+[14:05:46] Step 32425 | Total: 1.9481 | CDS: 1.8125
+[14:06:00] Step 32430 | Total: 2.6094 | CDS: 2.4337
+[14:06:14] Step 32435 | Total: 2.0295 | CDS: 1.8865
+[14:06:28] Step 32440 | Total: 2.5558 | CDS: 2.3403
+[14:06:42] Step 32445 | Total: 1.9518 | CDS: 1.8388
+[14:06:56] Step 32450 | Total: 2.3802 | CDS: 2.1861
+[14:07:10] Step 32455 | Total: 1.9182 | CDS: 1.8052
+[14:07:24] Step 32460 | Total: 1.9600 | CDS: 1.8156
+[14:07:38] Step 32465 | Total: 2.0366 | CDS: 1.8867
+[14:07:52] Step 32470 | Total: 2.1625 | CDS: 1.9473
+[14:08:06] Step 32475 | Total: 2.6699 | CDS: 2.5127
+[14:08:20] Step 32480 | Total: 2.7293 | CDS: 2.5893
+[14:08:34] Step 32485 | Total: 1.9965 | CDS: 1.8830
+[14:08:48] Step 32490 | Total: 1.9993 | CDS: 1.8750
+[14:09:02] Step 32495 | Total: 2.3094 | CDS: 2.1411
+[14:09:16] Step 32500 | Total: 1.9515 | CDS: 1.8280
+[14:09:30] Step 32505 | Total: 2.2744 | CDS: 2.0601
+[14:09:45] Step 32510 | Total: 2.3151 | CDS: 2.2146
+[14:09:59] Step 32515 | Total: 1.8952 | CDS: 1.7660
+[14:10:13] Step 32520 | Total: 2.6667 | CDS: 2.5488
+[14:10:27] Step 32525 | Total: 2.3805 | CDS: 2.2013
+[14:10:41] Step 32530 | Total: 1.9830 | CDS: 1.8945
+[14:10:55] Step 32535 | Total: 1.8039 | CDS: 1.6794
+[14:11:09] Step 32540 | Total: 2.0445 | CDS: 1.8803
+[14:11:23] Step 32545 | Total: 1.9446 | CDS: 1.8329
+[14:11:37] Step 32550 | Total: 2.0897 | CDS: 1.9737
+[14:11:39] 💾 Full checkpoint saved at Epoch 24, Step 32550, Batch 3959
+[14:11:53] Step 32555 | Total: 1.8762 | CDS: 1.7223
+[14:12:08] Step 32560 | Total: 1.9946 | CDS: 1.8770
+[14:12:22] Step 32565 | Total: 1.9957 | CDS: 1.8084
+[14:12:36] Step 32570 | Total: 2.0389 | CDS: 1.8857
+[14:12:50] Step 32575 | Total: 1.9744 | CDS: 1.8445
+[14:13:04] Step 32580 | Total: 1.9849 | CDS: 1.8262
+[14:13:18] Step 32585 | Total: 2.0795 | CDS: 1.9413
+[14:13:32] Step 32590 | Total: 1.9640 | CDS: 1.8512
+[14:13:46] Step 32595 | Total: 2.1301 | CDS: 1.9880
+[14:14:00] Step 32600 | Total: 2.3743 | CDS: 2.1978
+[14:14:14] Step 32605 | Total: 2.1795 | CDS: 1.9875
+[14:14:28] Step 32610 | Total: 2.1282 | CDS: 1.9911
+[14:14:42] Step 32615 | Total: 2.4822 | CDS: 2.3862
+[14:14:56] Step 32620 | Total: 1.9175 | CDS: 1.8038
+[14:15:10] Step 32625 | Total: 2.3161 | CDS: 2.1920
+[14:15:24] Step 32630 | Total: 1.9920 | CDS: 1.8806
+[14:15:38] Step 32635 | Total: 2.2372 | CDS: 2.0748
+[14:15:52] Step 32640 | Total: 2.0126 | CDS: 1.8882
+[14:16:06] Step 32645 | Total: 2.3101 | CDS: 2.1813
+[14:16:20] Step 32650 | Total: 1.9478 | CDS: 1.8506
+[14:16:34] Step 32655 | Total: 1.9804 | CDS: 1.7929
+[14:16:48] Step 32660 | Total: 2.0208 | CDS: 1.8977
+[14:17:02] Step 32665 | Total: 2.0293 | CDS: 1.8790
+[14:17:16] Step 32670 | Total: 2.3268 | CDS: 2.2122
+[14:17:30] Step 32675 | Total: 1.9983 | CDS: 1.8802
+[14:17:44] Step 32680 | Total: 2.3367 | CDS: 2.1947
+[14:17:58] Step 32685 | Total: 1.9208 | CDS: 1.7845
+[14:18:12] Step 32690 | Total: 1.9516 | CDS: 1.8354
+[14:18:26] Step 32695 | Total: 2.2817 | CDS: 2.1134
+[14:18:40] Step 32700 | Total: 2.2825 | CDS: 2.1230
+[14:18:43] 💾 Full checkpoint saved at Epoch 24, Step 32700, Batch 4559
+[14:18:57] Step 32705 | Total: 2.1304 | CDS: 1.8914
+[14:19:11] Step 32710 | Total: 1.8258 | CDS: 1.6992
+[14:19:25] Step 32715 | Total: 2.0968 | CDS: 1.9187
+[14:19:39] Step 32720 | Total: 2.1529 | CDS: 1.9864
+[14:19:53] Step 32725 | Total: 2.0257 | CDS: 1.8438
+[14:20:07] Step 32730 | Total: 1.9691 | CDS: 1.8831
+[14:20:21] Step 32735 | Total: 1.9854 | CDS: 1.8451
+[14:20:35] Step 32740 | Total: 2.0288 | CDS: 1.9121
+[14:20:49] Step 32745 | Total: 1.9395 | CDS: 1.7947
+[14:21:03] Step 32750 | Total: 2.0624 | CDS: 1.9331
+[14:21:17] Step 32755 | Total: 2.4722 | CDS: 2.3296
+[14:21:31] Step 32760 | Total: 1.8336 | CDS: 1.7233
+[14:21:45] Step 32765 | Total: 1.9118 | CDS: 1.7792
+[14:21:59] Step 32770 | Total: 2.5114 | CDS: 2.3401
+[14:22:13] Step 32775 | Total: 1.8750 | CDS: 1.7562
+[14:22:27] Step 32780 | Total: 2.0662 | CDS: 1.9186
+[14:22:41] Step 32785 | Total: 2.0054 | CDS: 1.8624
+[14:22:55] Step 32790 | Total: 2.0233 | CDS: 1.7857
+[14:23:09] Step 32795 | Total: 2.2861 | CDS: 2.0720
+[14:23:23] Step 32800 | Total: 2.2887 | CDS: 2.0794
+[14:23:37] Step 32805 | Total: 1.8302 | CDS: 1.6954
+[14:23:51] Step 32810 | Total: 1.8948 | CDS: 1.7062
+[14:24:05] Step 32815 | Total: 2.1534 | CDS: 2.0168
+[14:24:19] Step 32820 | Total: 1.7746 | CDS: 1.6722
+[14:24:33] Step 32825 | Total: 2.2912 | CDS: 2.1703
+[14:24:48] Step 32830 | Total: 2.3987 | CDS: 2.2552
+[14:25:02] Step 32835 | Total: 2.0252 | CDS: 1.9019
+[14:25:16] Step 32840 | Total: 2.3940 | CDS: 2.2416
+[14:25:30] Step 32845 | Total: 2.5570 | CDS: 2.3463
+[14:25:44] Step 32850 | Total: 2.0827 | CDS: 1.9691
+[14:25:46] 💾 Full checkpoint saved at Epoch 24, Step 32850, Batch 5159
+[14:26:00] Step 32855 | Total: 1.9402 | CDS: 1.8026
+[14:26:14] Step 32860 | Total: 2.6143 | CDS: 2.4984
+[14:26:28] Step 32865 | Total: 2.3163 | CDS: 2.2078
+[14:26:42] Step 32870 | Total: 1.9308 | CDS: 1.8294
+[14:26:56] Step 32875 | Total: 2.5172 | CDS: 2.4142
