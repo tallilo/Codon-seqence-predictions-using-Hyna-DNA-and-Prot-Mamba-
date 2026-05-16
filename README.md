@@ -43,9 +43,11 @@ MY_PROJECT_DIR/
         ├── prot_mamba_modules.py     # (Included in this repo)
         └── config.json               # (Included in this repo)
 
+```
 
-
-In summary, this project serves as a proof of concept for the integration of DNA data and State Space Models (SSMs) into specific biological prediction tasks. It demonstrates the utility of harnessing the linear-time complexity and high expressivity of SSMs to extract meaningful features from long-sequence modalities such as DNA. Future work should utilize larger datasets to enhance the extraction of these critical features. Ultimately, these learned representations could later be injected into other modalities, providing valuable orthogonal information without requiring the original DNA sequence during inference.
+In summary, this project serves as a proof of concept for the integration of DNA data and State Space Models (SSMs) into specific biological prediction tasks.
+It demonstrates the utility of harnessing the linear-time complexity and high expressivity of SSMs to extract meaningful features from long-sequence modalities such as DNA.
+Future Work: Larger datasets should be utilized to enhance the extraction of these critical features. Ultimately, these learned representations could later be injected into other modalities, providing valuable orthogonal information without requiring the original DNA sequence during inference.
 
 ## References & Acknowledgments
 
