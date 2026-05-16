@@ -14,7 +14,7 @@ The model was trained on a highly curated dataset of **42,000 samples**, spannin
 > [!IMPORTANT]
 > The networks that successfully converged are located in the `FIRST MODEL` directory. The architecture in the `SECOND MODEL` directory did not converge. however, it is included for reference and to provide justification for the approach taken in the first model.
 
-Getting Started on SLURM
+##  Getting Started on SLURM
 
 To ensure the scripts execute correctly on your SLURM cluster, please configure the following settings before running the code.
 
