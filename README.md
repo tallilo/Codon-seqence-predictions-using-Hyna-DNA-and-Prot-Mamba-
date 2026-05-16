@@ -33,24 +33,13 @@ Make sure to put the *.py and *.sh files in the home dir of you project!
 
 In summary, this project serves as a proof of concept for the integration of DNA data and State Space Models (SSMs) into specific biological prediction tasks. It demonstrates the utility of harnessing the linear-time complexity and high expressivity of SSMs to extract meaningful features from long-sequence modalities such as DNA. Future work should utilize larger datasets to enhance the extraction of these critical features. Ultimately, these learned representations could later be injected into other modalities, providing valuable orthogonal information without requiring the original DNA sequence during inference.
 
+## References & Acknowledgments
 
-@article{nguyen2023hyenadna,
-      title={HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution}, 
-      author={Eric Nguyen and Michael Poli and Marjan Faizi and Armin Thomas and Callum Birch-Sykes and Michael Wornow and Aman Patel and Clayton Rabideau and Stefano Massaroli and Yoshua Bengio and Stefano Ermon and Stephen A. Baccus and Chris Ré},
-      year={2023},
-      eprint={2306.15794},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-}
+This project builds upon the foundational architectures and research from the following papers. If you find this repository useful, please consider citing the original authors:
 
-@article{sgarbossa2024protmamba,
-  title={{ProtMamba}: -- a homology-aware but alignment-free protein state space model},
-  author={Damiano Sgarbossa and Cyril Malbranke and Anne-Florence Bitbol},
-  journal={bioRxiv},
-  doi = {10.1101/2024.05.24.595730},
-  year={2024},
-  url={https://www.biorxiv.org/content/early/2024/05/25/2024.05.24.595730}
-}
+* **HyenaDNA:** Nguyen, E., Poli, M., Faizi, M., et al. (2023). *HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution*. arXiv preprint. [View Paper (arXiv:2306.15794)](https://arxiv.org/abs/2306.15794)
+* **ProtMamba:** Sgarbossa, D., Malbranke, C., & Bitbol, A.-F. (2024). *ProtMamba: a homology-aware but alignment-free protein state space model*. bioRxiv. [View Paper (bioRxiv)](https://www.biorxiv.org/content/10.1101/2024.05.24.595730)
 
+* 
 For any additional information:
 tallilo@mail.tau.ac.il
