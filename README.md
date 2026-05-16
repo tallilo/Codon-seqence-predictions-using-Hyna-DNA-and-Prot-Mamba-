@@ -1,7 +1,17 @@
-In this project, we utilized the HyenaDNA and ProtMamba foundation models, specifically employing the 1M context length version of HyenaDNA. The outputs from these State Space Models (SSMs) were fed into an attention-based decoder to predict the codon sequence. To enhance species-conditioned generation, the decoder featured a dedicated prediction head per species.
-Auxiliary heads for both organism classification and protein abundance class prediction were also implemented.
+## 🧠 Model Architecture & Dataset
 
-Only 42,000 samples were used for training, spanning 17 distinct species from all three domains of life: 10 Bacteria, 5 Eukaryota, and 2 Archaea. For further details regarding the dataset, please refer to the Zenodo repository: https://zenodo.org/records/20131143.
+In this project, we utilized the **HyenaDNA** and **ProtMamba** foundation models, specifically employing the 1M context-length variant of HyenaDNA. The representations extracted from these State Space Models (SSMs) were fed into an attention-based decoder to predict the codon sequence. 
+
+To optimize species-conditioned generation, our architecture features:
+* **Species-Specific Heads:** A dedicated prediction head for each target species.
+* **Auxiliary Heads:** Additional layers implemented for organism classification and protein abundance (PA) class prediction.
+
+### 📊 Training Data
+The model was trained on a highly curated dataset of **42,000 samples**, spanning 17 distinct species across all three domains of life:
+* 🦠 **10 Bacteria**
+* 🧬 **5 Eukaryota**
+* 🌋 **2 Archaea**
+*  For further details regarding the dataset, please refer to the Zenodo repository: https://zenodo.org/records/20131143.
 
 <img width="754" height="412" alt="image" src="https://github.com/user-attachments/assets/81bdadbe-3572-47de-8dc5-3af76c7c9483" />
 
