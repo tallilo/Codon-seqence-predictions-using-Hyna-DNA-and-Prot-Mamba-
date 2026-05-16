@@ -54,9 +54,15 @@ If you want to train a model from scratch, simply follow these steps:
 3. **Update the Script:** Update your `.sh` execution script to point to this new config file.
 
 
-In summary, this project serves as a proof of concept for the integration of DNA data and State Space Models (SSMs) into specific biological prediction tasks.
+## 📌 Conclusion & Future Work
+
+In summary, this project serves as a proof of concept for the integration of DNA data and **State Space Models (SSMs)** into specific biological prediction tasks. 
+
 It demonstrates the utility of harnessing the linear-time complexity and high expressivity of SSMs to extract meaningful features from long-sequence modalities such as DNA.
-Future Work: Larger datasets should be utilized to enhance the extraction of these critical features. Ultimately, these learned representations could later be injected into other modalities, providing valuable orthogonal information without requiring the original DNA sequence during inference.
+
+**🚀 Future Work:**
+* **Dataset Expansion:** Larger datasets should be utilized to enhance the extraction of these critical features. 
+* **Multimodal Injection:** Ultimately, these learned representations could later be injected into other modalities, providing valuable orthogonal information without requiring the original DNA sequence during inference.
 
 ## References & Acknowledgments
 
@@ -65,6 +71,8 @@ This project builds upon the foundational architectures and research from the fo
 * **HyenaDNA:** Nguyen, E., Poli, M., Faizi, M., et al. (2023). *HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution*. arXiv preprint. [View Paper (arXiv:2306.15794)](https://arxiv.org/abs/2306.15794)
 * **ProtMamba:** Sgarbossa, D., Malbranke, C., & Bitbol, A.-F. (2024). *ProtMamba: a homology-aware but alignment-free protein state space model*. bioRxiv. [View Paper (bioRxiv)](https://www.biorxiv.org/content/10.1101/2024.05.24.595730)
 
-* 
-For any additional information:
-tallilo@mail.tau.ac.il
+  
+## ✉️ Contact
+
+For any additional information or questions regarding this project, please feel free to reach out:
+* **Email:** [tallilo@mail.tau.ac.il](mailto:tallilo@mail.tau.ac.il)
