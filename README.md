@@ -45,7 +45,13 @@ MY_PROJECT_DIR/
 
 ```
 
-If you want to train a model from scratch, simply create a configuration file inside the /configs directory. Set the experiment_id to the name of the folder you want created in the /runs directory, and update your .sh script to use this new config file
+### ⚙️ Training from Scratch with a Different Configuration
+
+If you want to train a model from scratch, simply follow these steps:
+
+1. **Create a Config:** Create a new configuration file inside the `/configs` directory.
+2. **Set the ID:** Inside that file, set the `experiment_id` to the name of the folder you want automatically created in the `/runs` directory.
+3. **Update the Script:** Update your `.sh` execution script to point to this new config file.
 
 
 In summary, this project serves as a proof of concept for the integration of DNA data and State Space Models (SSMs) into specific biological prediction tasks.
