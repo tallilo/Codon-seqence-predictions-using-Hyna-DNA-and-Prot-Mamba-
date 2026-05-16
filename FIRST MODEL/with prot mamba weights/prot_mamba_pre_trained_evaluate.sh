@@ -49,6 +49,10 @@ nvidia-smi --query-gpu=name,memory.total --format=csv,noheader
 # Activate the dedicated Conda environment containing PyTorch and required dependencies
 source /powerapps/share/centos7/python-anaconda3-2022.10/bin/activate /scratch200/tallilo/conda_envs/dna_env
 
+
+# Define the home directory of the project ./
+export MY_PROJECT_DIR="/scratch200/tallilo/deep_learning_project"
+
 # Redirect Triton (GPU compiler) cache to the scratch drive 
 # This prevents filling up the limited home directory quota during model compilation
 export TRITON_CACHE_DIR="/scratch200/tallilo/deep_learning_project/.triton_cache"
@@ -70,6 +74,6 @@ echo "🔥 Starting evaluation on TEST set..."
 
 # Execute the evaluation script (the '-u' flag also enforces unbuffered output)
 # python -u evaluate_test_with_csv_of_pred.py  <-- (Commented out previous version)
-python -u inference_with_prot_mamba_weights.py
+python -u "$MY_PROJECT_DIR/inference_with_prot_mamba_weights.py"
 
 echo "✅ Evaluation Finished!"

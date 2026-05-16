@@ -43,6 +43,10 @@
 # ==========================================
 # 🛠️ ENVIRONMENT SETUP
 # ==========================================
+
+# Define the home directory of the project ./
+export MY_PROJECT_DIR="/scratch200/tallilo/deep_learning_project"
+
 # Define the base directory for all temporary and cache files on the scratch drive
 # This prevents filling up the limited home directory quota during training
 export MY_CACHE_DIR="/scratch200/tallilo/my_cluster_caches"
@@ -88,6 +92,6 @@ echo "🔥 Running Experiment 0 with configs/config_0_R.json..."
 
 # Execute the main PyTorch training script for the Multimodal model
 # using the specified LoRA configuration file
-python -u training_with_prot_mamba_weights.py --config configs/prot_mamba_pre_trained_32_r.json
+python -u "$MY_PROJECT_DIR/training_with_prot_mamba_weights.py" --config configs/prot_mamba_pre_trained_32_r.json
 
 echo "✅ Job Finished!"

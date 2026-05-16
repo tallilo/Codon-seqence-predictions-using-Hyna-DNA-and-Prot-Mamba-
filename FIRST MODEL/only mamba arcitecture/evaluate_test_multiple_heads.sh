@@ -25,6 +25,8 @@ nvidia-smi --query-gpu=name,memory.total --format=csv,noheader
 
 source /powerapps/share/centos7/python-anaconda3-2022.10/bin/activate /scratch200/tallilo/conda_envs/dna_env
 
+# Define the home directory of the project ./
+export MY_PROJECT_DIR="/scratch200/tallilo/deep_learning_project"
 
 export TRITON_CACHE_DIR="/scratch200/tallilo/deep_learning_project/.triton_cache"
 mkdir -p $TRITON_CACHE_DIR
@@ -38,6 +40,6 @@ export CUDA_LAUNCH_BLOCKING=1
 
 echo "🔥 Starting evaluation on TEST set..."
 
-python -u inference_without_prot_mamba_weights.py
+python -u "$MY_PROJECT_DIR/inference_without_prot_mamba_weights.py"
 
 echo "✅ Evaluation Finished!"

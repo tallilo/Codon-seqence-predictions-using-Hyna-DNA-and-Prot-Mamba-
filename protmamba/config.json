@@ -1,0 +1,21 @@
+{
+  "model_type": "prot_mamba",
+  "d_model": 1024,
+  "n_layer": 16,
+  "vocab_size": 38,
+  "ssm_cfg": {},
+  "rms_norm": true,
+  "residual_in_fp32": false,
+  "fused_add_norm": true,
+  "pad_vocab_size_multiple": 8,
+  "max_position_embeddings": 2048,
+  "max_msa_len": 32768,
+  "max_seq_position_embeddings": 512,
+  "add_position_ids": "1d",
+  "fim_strategy": "multiple_span",
+  "compute_only_fim_loss": true,
+  "always_mask": true,
+  "state_size": 16,
+  "expand": 2,
+  "conv_kernel": 4
+}

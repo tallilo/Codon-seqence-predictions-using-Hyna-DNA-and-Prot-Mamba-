@@ -44,9 +44,14 @@
 # ==========================================
 # 🛠️ ENVIRONMENT SETUP
 # ==========================================
+
+# Define the home directory of the project ./
+export MY_PROJECT_DIR="/scratch200/tallilo/deep_learning_project"
+
 # Define the base directory for all temporary and cache files on the scratch drive
 # This prevents filling up the limited home directory quota during training
 export MY_CACHE_DIR="/scratch200/tallilo/my_cluster_caches"
+
 
 # Create the necessary cache subdirectories if they do not already exist
 mkdir -p $MY_CACHE_DIR/huggingface
@@ -89,6 +94,6 @@ echo "🔥 Running Experiment 0 with configs/config_0_R.json..."
 
 # Execute the main PyTorch training script (without pre-trained ProtMamba weights)
 # using the specified multi-head configuration file
-python -u training_without_prot_mamba_wights.py --config configs/config_0_R_multi_heads.json
+python -u "$MY_PROJECT_DIR/training_without_prot_mamba_wights.py" --config configs/config_0_R_multi_heads.json
 
 echo "✅ Job Finished!"
