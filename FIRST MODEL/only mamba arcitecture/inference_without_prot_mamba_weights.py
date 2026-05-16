@@ -15,7 +15,7 @@ from train_55_reproduction_multiple_heads import OptimizedFusionModel, GenomicDa
 # ==========================================
 #  SETUP & PATHS
 # ==========================================
-BASE_TMP_PATH = "/scratch200/tallilo/deep_learning_project"
+BASE_TMP_PATH = BASE_TMP_PATH = os.environ.get("BASE_TMP_PATH", "/scratch200/tallilo/deep_learning_project")
 TEST_FILE = f"{BASE_TMP_PATH}/data/TEST_HOMOLOGY_SPLIT.csv"
 
 # Make sure this points to your specific "Multi-Head per Organism" experiment

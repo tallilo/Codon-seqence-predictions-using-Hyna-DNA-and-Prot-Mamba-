@@ -37,7 +37,7 @@ from transformers import PreTrainedModel
 # 🛠️ 0. CONFIGURATION & SETUP
 # ==========================================
 # Change to your relevent paths
-BASE_TMP_PATH = "/scratch200/tallilo/deep_learning_project"
+BASE_TMP_PATH = BASE_TMP_PATH = os.environ.get("BASE_TMP_PATH", "/scratch200/tallilo/deep_learning_project")
 TRAIN_FILE = f"{BASE_TMP_PATH}/data/TRAIN_HOMOLOGY_SPLIT.csv"
 VAL_FILE = f"{BASE_TMP_PATH}/data/TEST_HOMOLOGY_SPLIT.csv"
 PATH_DNA_CHECKPOINT = f"{BASE_TMP_PATH}/models/hyena_dna/HYENA_DNA_weights.ckpt"

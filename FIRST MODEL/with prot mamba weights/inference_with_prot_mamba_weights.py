@@ -19,7 +19,7 @@ from prot_mamba_pre_trained import OptimizedFusionModel, GenomicDataset, smart_p
 # ==========================================
 # 🛠️ SETUP & PATHS
 # ==========================================
-BASE_TMP_PATH = "/scratch200/tallilo/deep_learning_project"
+BASE_TMP_PATH = BASE_TMP_PATH = os.environ.get("BASE_TMP_PATH", "/scratch200/tallilo/deep_learning_project")
 TEST_FILE = f"{BASE_TMP_PATH}/data/TEST_HOMOLOGY_SPLIT.csv"
 
 # ==========================================
