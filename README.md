@@ -10,8 +10,9 @@ The model was trained on a highly curated dataset of **42,000 samples**, spannin
 *  For further details regarding the dataset, please refer to the Zenodo repository: https://zenodo.org/records/20131143.
 
 <img width="754" height="412" alt="image" src="https://github.com/user-attachments/assets/81bdadbe-3572-47de-8dc5-3af76c7c9483" />
-> **IMPORTANT NOTICE:**
-> Please note that in this repository, the networks that successfully converged are located in the `FIRST MODEL` directory. The architecture in the `SECOND MODEL` directory did not converge, however, It is included for reference and to provide justification for the approach used in the first model.
+
+> [!IMPORTANT]
+> The networks that successfully converged are located in the `FIRST MODEL` directory. The architecture in the `SECOND MODEL` directory did not converge. however, it is included for reference and to provide justification for the approach taken in the first model.
 
 Getting Started on SLURM
 
