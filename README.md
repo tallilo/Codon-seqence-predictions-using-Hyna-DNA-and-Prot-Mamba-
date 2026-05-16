@@ -6,28 +6,42 @@ Only 42,000 samples were used for training, spanning 17 distinct species from al
 <img width="754" height="412" alt="image" src="https://github.com/user-attachments/assets/81bdadbe-3572-47de-8dc5-3af76c7c9483" />
 
 
+Getting Started on SLURM
 
-To ensure the scripts execute correctly on your SLURM server, please note the following in the files:
+To ensure the scripts execute correctly on your SLURM cluster, please configure the following settings before running the code.
 
-In the *.sh files you should:
-  -Put your account in ACCOUNT & PRIVILEGES insted of mine.
-  -The QoS you use and the PARTITION you use ( GPU ) .
-  -Make sure to put you working dir path for all the cash in "MY_CACHE_DIR" (make sure you have enogh space there!!!)
-  - Make sure to put your home directory of the project in "MY_PROJECT_DIR"
-  - In WANDB_API_KEY put your wandb key
-  - make sure you condat env set up with environment.yml , requirements.txt . Change to you conda env name.
-  - make sure you have configs file in you home directory of the project when the configs files inside it.
+### 1. Shell Script Configuration (`*.sh` files)
+Open the bash scripts and update the following variables to match your specific cluster environment:
+* **`ACCOUNT & PRIVILEGES`:** Replace my account details with your own.
+* **`PARTITION` & `QoS`:** Specify your cluster's GPU partition and Quality of Service.
+* **`MY_CACHE_DIR`:** Set the path to your working directory for caching. *(Note: Ensure you have sufficient storage space allocated here!)*
+* **`MY_PROJECT_DIR`:** Set this to the absolute path of the project's root directory.
+* **`WANDB_API_KEY`:** Insert your Weights & Biases API key.
+* **Conda Environment:** Ensure your environment is built using the provided `environment.yml` and `requirements.txt`. Update the scripts with your exact Conda environment name.
 
-In the *.py files you should:
-  - make sure you have runs, configs , models , data folders
-  - In the /runs folder you should put the weight including folder ( for instance all the folder "prot_mamba_pre_trained_32_r" )
-  - in the /configs you should put the configs files , be carful, similar config file exist also in the weight including folder.
-  - in the /models you should have the dirs: hyena_dna, protmamba
-  - inside /models/hyena_dna you should have : HYENA_DNA_weights.ckpt - the wights for the 1M context Hyena DNA model from hugginface, and the files modeling_hyena.py , config.json that are in this git repo.
-  - inside /models/protmamba  you should have : pytorch_model.bin - the weights of prot Mamba from thier git repo , and the files: prot_mamba_modules.py , config.json  that are  in this git repo.
-  - inside the /data folder , you shoud have the datasets for train ,test and validation that uploded to Zenodo : https://zenodo.org/records/20131143
+### 2. Directory Structure & Setup (`*.py` files)
+**Important:** All executable `*.py` and `*.sh` files must be placed directly in the root directory of your project. 
 
-Make sure to put the *.py and *.sh files in the home dir of you project!
+Your project folder must strictly adhere to the following structure:
+
+```text
+MY_PROJECT_DIR/
+├── train.py                 # (Place all .py and .sh scripts here in the root)
+├── data/                    
+│   └── (Download the train/test/val datasets from Zenodo: [https://zenodo.org/records/20131143](https://zenodo.org/records/20131143))
+├── configs/                 
+│   └── (Place your configuration files here. Note: similar config files may also exist in the runs folder)
+├── runs/                    
+│   └── prot_mamba_pre_trained_32_r/  # (Place your training run output/weight folders here)
+└── models/                  
+    ├── hyena_dna/           
+    │   ├── HYENA_DNA_weights.ckpt    # (Download the 1M context weights from HuggingFace)
+    │   ├── modeling_hyena.py         # (Included in this repo)
+    │   └── config.json               # (Included in this repo)
+    └── protmamba/           
+        ├── pytorch_model.bin         # (Download weights from the official ProtMamba repo)
+        ├── prot_mamba_modules.py     # (Included in this repo)
+        └── config.json               # (Included in this repo)
 
 
 
