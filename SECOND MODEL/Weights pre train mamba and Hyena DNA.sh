@@ -40,6 +40,9 @@
 # 🛠️ ENVIRONMENT SETUP
 # ==========================================
 
+# Define the home directory of the project ./
+export MY_PROJECT_DIR="/scratch200/tallilo/deep_learning_project"
+
 # Define a centralized cache directory on the scratch storage to avoid Home Directory quota limits
 export MY_CACHE_DIR="/scratch200/tallilo/my_cluster_caches"
 
@@ -79,7 +82,7 @@ nvidia-smi --query-gpu=name,memory.total --format=csv,noheader
 
 # Execute the training script using the provided JSON configuration
 # The -u flag ensures unbuffered output for cleaner logging
-python -u Testing_gradients_decoder_lead_run_away_platue_stage_6_trans_loss_1.0_less_noise_restart_8_lr_DNA_GATE.py \
-    --config configs/Testing_gradients_decoder_lead_run_away_platue_stage_6_trans_loss_1.0_less_noise_restart_8_lr_DNA_GATE.json
+python -u "$MY_PROJECT_DIR/Weights pre train mamba and Hyena DNA.py" \
+    --config configs/Weights pre train mamba and Hyena DNA.json
 
 echo "✅ Job Finished!"
