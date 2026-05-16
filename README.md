@@ -45,6 +45,9 @@ MY_PROJECT_DIR/
 
 ```
 
+If you want to train a model from scratch, simply create a configuration file inside the /configs directory. Set the experiment_id to the name of the folder you want created in the /runs directory, and update your .sh script to use this new config file
+
+
 In summary, this project serves as a proof of concept for the integration of DNA data and State Space Models (SSMs) into specific biological prediction tasks.
 It demonstrates the utility of harnessing the linear-time complexity and high expressivity of SSMs to extract meaningful features from long-sequence modalities such as DNA.
 Future Work: Larger datasets should be utilized to enhance the extraction of these critical features. Ultimately, these learned representations could later be injected into other modalities, providing valuable orthogonal information without requiring the original DNA sequence during inference.
