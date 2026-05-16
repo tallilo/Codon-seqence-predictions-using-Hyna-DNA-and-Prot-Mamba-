@@ -1,12 +1,8 @@
-## 🧠 Model Architecture & Dataset
+##  Model Architecture & Dataset
 
-In this project, we utilized the **HyenaDNA** and **ProtMamba** foundation models, specifically employing the 1M context-length variant of HyenaDNA. The representations extracted from these State Space Models (SSMs) were fed into an attention-based decoder to predict the codon sequence. 
+In this project, we utilized the HyenaDNA and ProtMamba foundation models, specifically employing the 1M context length version of HyenaDNA. The outputs from these State Space Models (SSMs) were fed into an attention-based decoder to predict the codon sequence. To enhance species-conditioned generation, the decoder featured a dedicated prediction head per species. Auxiliary heads for both organism classification and protein abundance class prediction were also implemented.
 
-To optimize species-conditioned generation, our architecture features:
-* **Species-Specific Heads:** A dedicated prediction head for each target species.
-* **Auxiliary Heads:** Additional layers implemented for organism classification and protein abundance (PA) class prediction.
-
-### 📊 Training Data
+###  Training Data
 The model was trained on a highly curated dataset of **42,000 samples**, spanning 17 distinct species across all three domains of life:
 * 🦠 **10 Bacteria**
 * 🧬 **5 Eukaryota**
@@ -55,7 +51,7 @@ MY_PROJECT_DIR/
 
 ```
 
-### ⚙️ Training from Scratch with a Different Configuration
+###  Training from Scratch with a Different Configuration
 
 If you want to train a model from scratch, simply follow these steps:
 
@@ -64,13 +60,13 @@ If you want to train a model from scratch, simply follow these steps:
 3. **Update the Script:** Update your `.sh` execution script to point to this new config file.
 
 
-## 📌 Conclusion & Future Work
+##  Conclusion & Future Work
 
 In summary, this project serves as a proof of concept for the integration of DNA data and **State Space Models (SSMs)** into specific biological prediction tasks. 
 
 It demonstrates the utility of harnessing the linear-time complexity and high expressivity of SSMs to extract meaningful features from long-sequence modalities such as DNA.
 
-**🚀 Future Work:**
+** Future Work:**
 * **Dataset Expansion:** Larger datasets should be utilized to enhance the extraction of these critical features. 
 * **Multimodal Injection:** Ultimately, these learned representations could later be injected into other modalities, providing valuable orthogonal information without requiring the original DNA sequence during inference.
 
@@ -82,7 +78,7 @@ This project builds upon the foundational architectures and research from the fo
 * **ProtMamba:** Sgarbossa, D., Malbranke, C., & Bitbol, A.-F. (2024). *ProtMamba: a homology-aware but alignment-free protein state space model*. bioRxiv. [View Paper (bioRxiv)](https://www.biorxiv.org/content/10.1101/2024.05.24.595730)
 
   
-## ✉️ Contact
+##  Contact
 
 For any additional information or questions regarding this project, please feel free to reach out:
 * **Email:** [tallilo@mail.tau.ac.il](mailto:tallilo@mail.tau.ac.il)
