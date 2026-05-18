@@ -64,7 +64,7 @@ If you want to train a model from scratch, simply follow these steps:
 
 ##  Conclusion & Future Work
 
-In summary, this project serves as a proof of concept for the integration of DNA data and **State Space Models (SSMs)** into specific biological prediction tasks. 
+In summary, this project serves as a proof of concept for the integration of DNA data and **State Space Models (SSMs)** into a specific codon sequence prediction task. 
 
 It demonstrates the utility of harnessing the linear-time complexity and high expressivity of SSMs to extract meaningful features from long-sequence modalities such as DNA.
 
