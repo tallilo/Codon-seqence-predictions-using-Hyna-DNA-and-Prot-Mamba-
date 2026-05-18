@@ -68,7 +68,7 @@ In summary, this project serves as a proof of concept for the integration of DNA
 
 It demonstrates the utility of harnessing the linear-time complexity and high expressivity of SSMs to extract meaningful features from long-sequence modalities such as DNA.
 
-** Future Work:**
+### Future Work:
 * **Dataset Expansion:** Larger datasets should be utilized to enhance the extraction of these critical features. 
 * **Multimodal Injection:** Ultimately, these learned representations could later be injected into other modalities, providing valuable orthogonal information without requiring the original DNA sequence during inference.
 
